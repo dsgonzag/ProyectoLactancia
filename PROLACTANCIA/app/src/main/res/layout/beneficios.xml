@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_beneficios"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_nuevo"
+    tools:context=".Beneficios">
+
+    <ImageButton
+        android:id="@+id/bt_atras"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/atras_m" />
+
+    <TextView
+        android:id="@+id/txt_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/bt_atras"
+        android:layout_toLeftOf="@id/bt_home"
+        android:padding="5dp"
+        android:paddingTop="15dp"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <ImageButton
+        android:id="@+id/bt_home"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/home_m" />
+
+    <ImageView
+        android:id="@+id/img_representativa"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@id/contenido"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        app:srcCompat="@drawable/beneficios_1" />
+
+    <TextView
+        android:id="@+id/txt_mensaje"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_above="@id/contenido"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_toEndOf="@+id/img_representativa"
+        android:textAlignment="viewEnd"
+        android:textSize="18sp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/contenido"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/vista_contenido"
+        android:layout_centerHorizontal="true"
+        android:background="@color/cardview_light_background"
+        android:textAlignment="center"
+        android:textDirection="inherit"
+        app:tabIndicatorColor="#E91E63"
+        app:tabIndicatorGravity="bottom"
+        app:tabMaxWidth="400dp"
+        app:tabMode="fixed"
+        app:tabRippleColor="@android:color/holo_red_light"
+        app:tabSelectedTextColor="#E91E63"
+        app:tabTextAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:tabTextColor="#000000">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_madre"
+            android:layout_width="400dp"
+            android:layout_height="300dp"
+            android:text="Mamá" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_hijo"
+            android:layout_width="400dp"
+            android:layout_height="300dp"
+            android:text="Bebé" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vista_contenido"
+        android:layout_width="400dp"
+        android:layout_height="500dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp">
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+</RelativeLayout>
