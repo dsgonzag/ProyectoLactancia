@@ -2,11 +2,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/layout_higiene"
+    android:id="@+id/layout_menu_lactancia"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_nuevo"
-    tools:context=".MenuLactancia">
+    tools:context="app.packages.prolactancia.MenuLactancia">
 
     <View
         android:id="@+id/divider"
@@ -51,50 +51,50 @@
 
     <ImageButton
         android:id="@+id/bt_succion"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:backgroundTint="@android:color/transparent"
-        android:scaleType="fitCenter"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="100dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginLeft="20dp"
+        android:layout_marginBottom="75dp"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleType="centerCrop"
         app:srcCompat="@drawable/bt_succion" />
 
     <ImageButton
         android:id="@+id/bt_frecuencia_lact"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:backgroundTint="@android:color/transparent"
-        android:scaleType="fitCenter"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="100dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginRight="20dp"
+        android:layout_marginBottom="75dp"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleType="centerCrop"
         app:srcCompat="@drawable/bt_frecuencia_lact" />
 
     <ImageButton
         android:id="@+id/bt_alimentacion"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_above="@id/bt_succion"
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
         android:layout_marginLeft="20dp"
         android:backgroundTint="@android:color/transparent"
-        android:scaleType="fitCenter"
+        android:scaleType="centerCrop"
         app:srcCompat="@drawable/bt_alimentacion" />
 
     <ImageButton
         android:id="@+id/bt_problemas_lact"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_above="@id/bt_frecuencia_lact"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:layout_marginRight="20dp"
         android:backgroundTint="@android:color/transparent"
-        android:scaleType="fitCenter"
+        android:scaleType="centerCrop"
         app:srcCompat="@drawable/bt_problemas_lact" />
 
 </RelativeLayout>

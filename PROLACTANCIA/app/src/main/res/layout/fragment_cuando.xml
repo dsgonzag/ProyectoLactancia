@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/cardview_light_background"
-    tools:context=".Controladores.cuando">
+    tools:context="app.packages.prolactancia.Controladores.cuando">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -22,13 +22,10 @@
         android:padding="3dp"
         android:text="Antes de comer o cocinar."
         android:textColor="@color/design_default_color_on_secondary"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.009" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
@@ -39,9 +36,8 @@
         android:padding="3dp"
         android:text="Después de ir al baño."
         android:textColor="@color/design_default_color_on_secondary"
-        android:textSize="18sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView1" />
 
@@ -51,15 +47,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
-        android:padding="3dp"
         android:background="@color/cardview_shadow_start_color"
         android:backgroundTint="@color/cardview_shadow_start_color"
         android:foreground="@color/cardview_shadow_start_color"
+        android:padding="3dp"
         android:text="Al llegar de la escuela o el trabajo."
         android:textColor="@color/design_default_color_on_secondary"
-        android:textSize="18sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -72,9 +67,8 @@
         android:padding="3dp"
         android:text="Después de cambiar pañales a un bebé."
         android:textColor="@color/design_default_color_on_secondary"
-        android:textSize="18sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -84,15 +78,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
-        android:padding="3dp"
         android:background="@color/cardview_shadow_start_color"
         android:backgroundTint="@color/cardview_shadow_start_color"
         android:foreground="@color/cardview_shadow_start_color"
+        android:padding="3dp"
         android:text="Después de manipular alimentos"
         android:textColor="@color/design_default_color_on_secondary"
-        android:textSize="18sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -105,19 +98,16 @@
         android:padding="3dp"
         android:text="Antes y después de tener contacto con una persona enferma."
         android:textColor="@color/design_default_color_on_secondary"
-        android:textSize="18sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
 
     <ImageButton
         android:id="@+id/bt_ver_video"
-        android:layout_width="wrap_content"
-        android:layout_height="75dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="5dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
         android:backgroundTint="@android:color/transparent"
         android:scaleType="fitCenter"
         android:src="@drawable/bt_ver_video"

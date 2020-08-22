@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_alimentacion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    tools:context="app.packages.prolactancia.Controladores.aliviar_pc">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/cardview_shadow_start_color"
+        android:backgroundTint="@color/cardview_shadow_start_color"
+        android:foreground="@color/cardview_shadow_start_color"
+        android:padding="3dp"
+        android:text="La madre debe ponerse paños de agua tibia en los pechos. Si la areola
+está dura, para ablandarla la madre debe ordeñarse antes de poner el niño o niña al
+pecho. También puede darse masajes suaves en forma circular con la mano y/o con un peine."
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.009" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:padding="3dp"
+        android:text="La madre necesita descansar y debe amamantar más seguido del pecho congestionado.
+Debe asegurarse que el niño o niña esté en buena posición (agarrando bien el pezón y parte de la areola)."
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:padding="3dp"
+        android:background="@color/cardview_shadow_start_color"
+        android:backgroundTint="@color/cardview_shadow_start_color"
+        android:foreground="@color/cardview_shadow_start_color"
+        android:text="Si aún persiste la congestión, podría ser una candidata apta para la donación de leche en centros de lactancia."
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+    <ImageView
+        android:id="@+id/img_informate_1"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:baselineAlignBottom="true"
+        android:src="@drawable/pechos_cong_3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

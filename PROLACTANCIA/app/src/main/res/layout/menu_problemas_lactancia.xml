@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_nuevo"
-    tools:context=".MenuProblemasLactancia">
+    tools:context="app.packages.prolactancia.MenuProblemasLactancia">
 
     <View
         android:id="@+id/divider"
@@ -53,70 +53,70 @@
 
     <ImageButton
         android:id="@+id/bt_abceso"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:backgroundTint="@android:color/transparent"
-        android:scaleType="fitCenter"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="50dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleType="centerCrop"
         app:srcCompat="@drawable/bt_abceso" />
 
     <ImageButton
         android:id="@+id/bt_madre_enf"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:backgroundTint="@android:color/transparent"
-        android:scaleType="fitCenter"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="50dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleType="centerCrop"
         app:srcCompat="@drawable/bt_madre_enf" />
 
     <ImageButton
         android:id="@+id/bt_ductos_obs"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_above="@id/bt_abceso"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="20dp"
         android:backgroundTint="@android:color/transparent"
-        android:scaleType="fitCenter"
+        android:scaleType="centerCrop"
         app:srcCompat="@drawable/bt_ductos_obs" />
 
     <ImageButton
         android:id="@+id/bt_mastitis"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_above="@id/bt_madre_enf"
         android:layout_alignParentRight="true"
         android:layout_marginRight="20dp"
         android:backgroundTint="@android:color/transparent"
-        android:scaleType="fitCenter"
+        android:scaleType="centerCrop"
         app:srcCompat="@drawable/bt_mastitis" />
 
     <ImageButton
         android:id="@+id/bt_pechos_con"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_above="@id/bt_ductos_obs"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="20dp"
         android:backgroundTint="@android:color/transparent"
-        android:scaleType="fitCenter"
+        android:scaleType="centerCrop"
         app:srcCompat="@drawable/bt_pechos_con" />
 
     <ImageButton
         android:id="@+id/bt_dolor"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_above="@id/bt_mastitis"
         android:layout_alignParentRight="true"
         android:layout_marginRight="20dp"
         android:backgroundTint="@android:color/transparent"
-        android:scaleType="fitCenter"
+        android:scaleType="centerCrop"
         app:srcCompat="@drawable/bt_dolor" />
 
 </RelativeLayout>

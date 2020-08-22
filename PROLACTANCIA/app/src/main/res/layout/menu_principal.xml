@@ -8,87 +8,81 @@
     android:background="@drawable/fondo_nuevo"
     android:orientation="vertical"
     android:useDefaultMargins="true"
-    tools:context=".MenuPrincipal">
+    tools:context="app.packages.prolactancia.MenuPrincipal">
 
 
     <ImageButton
         android:id="@+id/bt_higiene"
-        android:layout_width="175dp"
-        android:layout_height="175dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="20dp"
         android:backgroundTint="@android:color/transparent"
-        android:scaleType="fitCenter"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/bt_higiene" />
 
     <ImageButton
         android:id="@+id/bt_mitos"
-        android:layout_width="175dp"
-        android:layout_height="175dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
         android:backgroundTint="@android:color/transparent"
-        android:scaleType="fitCenter"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:srcCompat="@drawable/bt_mitos_verdades" />
 
     <ImageButton
         android:id="@+id/bt_extraccion"
-        android:layout_width="175dp"
-        android:layout_height="175dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginStart="20dp"
         android:backgroundTint="@android:color/transparent"
-        android:scaleType="fitCenter"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toTopOf="@id/bt_higiene"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/bt_extraccion" />
 
     <ImageButton
         android:id="@+id/bt_donacion"
-        android:layout_width="175dp"
-        android:layout_height="175dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginEnd="20dp"
         android:backgroundTint="@android:color/transparent"
-        android:scaleType="fitCenter"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toTopOf="@id/bt_mitos"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:srcCompat="@drawable/bt_donacion" />
 
     <ImageButton
         android:id="@+id/bt_beneficios"
-        android:layout_width="175dp"
-        android:layout_height="175dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginStart="20dp"
         android:backgroundTint="@android:color/transparent"
-        android:scaleType="fitCenter"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toTopOf="@id/bt_extraccion"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/bt_beneficios" />
 
     <ImageButton
         android:id="@+id/bt_lactancia"
-        android:layout_width="175dp"
-        android:layout_height="175dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginEnd="20dp"
         android:backgroundTint="@android:color/transparent"
-        android:scaleType="fitCenter"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toTopOf="@id/bt_donacion"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:srcCompat="@drawable/bt_lactancia" />
 
     <ImageView
         android:id="@+id/img_titulo"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="40dp"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -100,7 +94,7 @@
         android:layout_height="7dp"
         android:background="@android:drawable/editbox_background_normal"
         android:backgroundTint="@android:color/background_light"
-        app:layout_constraintBottom_toBottomOf="@id/img_titulo"
+        app:layout_constraintTop_toBottomOf="@id/img_titulo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_nuevo"
-    tools:context=".Beneficios">
+    tools:context="app.packages.prolactancia.Beneficios">
 
     <ImageButton
         android:id="@+id/bt_atras"
@@ -43,8 +43,8 @@
 
     <ImageView
         android:id="@+id/img_representativa"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="75dp"
+        android:layout_height="100dp"
         android:layout_above="@id/contenido"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="10dp"
@@ -53,17 +53,19 @@
     <TextView
         android:id="@+id/txt_mensaje"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="100dp"
         android:layout_above="@id/contenido"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="20dp"
+        android:layout_marginRight="10dp"
         android:layout_toEndOf="@+id/img_representativa"
         android:textAlignment="viewEnd"
-        android:textSize="18sp" />
+        android:textAllCaps="false"
+        android:textDirection="firstStrongLtr"
+        android:textSize="14sp" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/contenido"
-        android:layout_width="400dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_above="@id/vista_contenido"
         android:layout_centerHorizontal="true"
@@ -81,22 +83,22 @@
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tab_madre"
-            android:layout_width="400dp"
-            android:layout_height="300dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Mamá" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tab_hijo"
-            android:layout_width="400dp"
-            android:layout_height="300dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Bebé" />
 
     </com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/vista_contenido"
-        android:layout_width="400dp"
-        android:layout_height="500dp"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp">

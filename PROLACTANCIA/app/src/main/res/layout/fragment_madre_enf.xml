@@ -1,0 +1,132 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_madre_enf_f"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    tools:context="app.packages.prolactancia.Controladores.madre_enf">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/cardview_shadow_start_color"
+        android:backgroundTint="@color/cardview_shadow_start_color"
+        android:foreground="@color/cardview_shadow_start_color"
+        android:padding="3dp"
+        android:text="Si puede continuar dando el pecho cuando está con:"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.009" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:padding="3dp"
+        android:text="Resfriados, Dolor de cabeza, Dolor de garganta, Diarrea o mal de estómago,
+Tratamiento de la epilepsia y Paludismo"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <ImageView
+        android:id="@+id/img_madre_enf_info"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/madre_enf_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/cardview_shadow_start_color"
+        android:backgroundTint="@color/cardview_shadow_start_color"
+        android:foreground="@color/cardview_shadow_start_color"
+        android:padding="3dp"
+        android:text="Enfermedades contagiosas como:"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_madre_enf_info" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:padding="3dp"
+        android:text="Bronquitis, Hepatitis y Enfermedades de transmisión sexual."
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/cardview_shadow_start_color"
+        android:backgroundTint="@color/cardview_shadow_start_color"
+        android:foreground="@color/cardview_shadow_start_color"
+        android:padding="3dp"
+        android:text="Estas enfermedades no pasan al niño o niña a través de la leche. Por el
+contrario, la leche materna protege al niño o niña de estas enfermedades. Pero, en el caso de
+SIDA se debe consultar con el personal de salud."
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+   <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:padding="3dp"
+        android:text="En la mayoría de los casos los medicamentos que toma la madre no le
+harán daño al niño o niña. Pero, se debe preguntar al médico si los medicamentos pueden afectar la lactancia o al niño o niña."
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

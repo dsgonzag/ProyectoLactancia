@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/cardview_light_background"
-    tools:context=".Controladores.hijo">
+    tools:context="app.packages.prolactancia.Controladores.hijo">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -14,19 +14,16 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
-        android:padding="3dp"
         android:background="@color/cardview_shadow_start_color"
         android:backgroundTint="@color/cardview_shadow_start_color"
         android:foreground="@color/cardview_shadow_start_color"
+        android:padding="3dp"
         android:text="Previene enfermedades comunes en la infancia como: diarreas, asma, neumonía, alergias, entre otras."
         android:textColor="@color/design_default_color_on_secondary"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.009" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
@@ -37,9 +34,8 @@
         android:padding="3dp"
         android:text="Reduce el riesgo por muerte súbita."
         android:textColor="@color/design_default_color_on_secondary"
-        android:textSize="18sp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView1" />
 
@@ -49,15 +45,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
-        android:padding="3dp"
         android:background="@color/cardview_shadow_start_color"
         android:backgroundTint="@color/cardview_shadow_start_color"
         android:foreground="@color/cardview_shadow_start_color"
+        android:padding="3dp"
         android:text="Crea un vínculo afectivo con la madre."
         android:textColor="@color/design_default_color_on_secondary"
-        android:textSize="18sp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -70,9 +65,8 @@
         android:padding="3dp"
         android:text="Huesos más fuertes."
         android:textColor="@color/design_default_color_on_secondary"
-        android:textSize="18sp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -82,15 +76,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
-        android:padding="3dp"
         android:background="@color/cardview_shadow_start_color"
         android:backgroundTint="@color/cardview_shadow_start_color"
         android:foreground="@color/cardview_shadow_start_color"
+        android:padding="3dp"
         android:text="Alimento completo y seguro."
         android:textColor="@color/design_default_color_on_secondary"
-        android:textSize="18sp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -103,9 +96,8 @@
         android:padding="3dp"
         android:text="Mejora el desarrollo cognitivo."
         android:textColor="@color/design_default_color_on_secondary"
-        android:textSize="18sp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
@@ -115,15 +107,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
-        android:padding="3dp"
         android:background="@color/cardview_shadow_start_color"
         android:backgroundTint="@color/cardview_shadow_start_color"
         android:foreground="@color/cardview_shadow_start_color"
+        android:padding="3dp"
         android:text="Es de fácil digestión, lo que disminuye los cólicos del bebé."
         android:textColor="@color/design_default_color_on_secondary"
-        android:textSize="18sp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
@@ -136,9 +127,8 @@
         android:padding="3dp"
         android:text="Tiene los líquidos y electrolitos suficientes para su hidratación."
         android:textColor="@color/design_default_color_on_secondary"
-        android:textSize="18sp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
@@ -148,24 +138,21 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
-        android:padding="3dp"
         android:background="@color/cardview_shadow_start_color"
         android:backgroundTint="@color/cardview_shadow_start_color"
         android:foreground="@color/cardview_shadow_start_color"
+        android:padding="3dp"
         android:text="Protege contra caries dental y reduce el riesgo de realizar ortodoncia en la infancia y la adolescencia."
         android:textColor="@color/design_default_color_on_secondary"
-        android:textSize="18sp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <ImageButton
         android:id="@+id/bt_ver_video"
-        android:layout_width="wrap_content"
-        android:layout_height="75dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="5dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
         android:backgroundTint="@android:color/transparent"
         android:scaleType="fitCenter"
         android:src="@drawable/bt_ver_video"

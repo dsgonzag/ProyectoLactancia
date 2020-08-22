@@ -5,8 +5,8 @@ android {
     buildToolsVersion "30.0.1"
 
     defaultConfig {
-        applicationId "com.example.prolactancia"
-        minSdkVersion 22
+        applicationId "app.packages.prolactancia"
+        minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"

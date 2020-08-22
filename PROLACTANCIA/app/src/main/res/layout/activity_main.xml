@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/fondo_nuevo"
-    tools:context=".MainActivity">
+    tools:context="app.packages.prolactancia.MainActivity">
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -34,14 +34,14 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="0dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="50dp"
         android:layout_marginEnd="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textViewPorcentaje"
         app:srcCompat="@drawable/logo_prolactancia" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

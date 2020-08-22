@@ -6,7 +6,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_nuevo"
-    tools:context=".PechosCongestionados">
+    tools:context="app.packages.prolactancia.PechosCongestionados">
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="@android:color/background_light"
+        android:layout_below="@id/bt_atras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/bt_atras"
@@ -24,6 +34,8 @@
         android:layout_height="75dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:layout_toLeftOf="@id/bt_home"
+        android:layout_toRightOf="@id/bt_atras"
         android:padding="5dp"
         android:paddingTop="15dp"
         android:textAlignment="center"
@@ -41,9 +53,10 @@
 
     <ImageView
         android:id="@+id/img_representativa"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="75dp"
+        android:layout_height="100dp"
         android:layout_above="@id/contenido"
+        android:layout_below="@id/divider"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="10dp"
         app:srcCompat="@drawable/pechos_cong_1" />
@@ -51,17 +64,18 @@
     <TextView
         android:id="@+id/txt_mensaje"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="100dp"
         android:layout_above="@id/contenido"
+        android:layout_below="@id/divider"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="20dp"
+        android:layout_marginRight="10dp"
         android:layout_toEndOf="@+id/img_representativa"
         android:textAlignment="viewEnd"
-        android:textSize="18sp" />
+        android:textSize="14sp" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/contenido"
-        android:layout_width="400dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_above="@id/vista_contenido"
         android:layout_centerHorizontal="true"
@@ -74,27 +88,27 @@
         app:tabMode="fixed"
         app:tabRippleColor="@android:color/holo_red_light"
         app:tabSelectedTextColor="#E91E63"
-        app:tabTextAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:tabTextAppearance="@style/TextAppearance.AppCompat.Medium"
         app:tabTextColor="#000000">
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tab_informate"
-            android:layout_width="400dp"
-            android:layout_height="300dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Infórmate" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tab_aliviar_cong"
-            android:layout_width="400dp"
-            android:layout_height="300dp"
-            android:text="Para aliviar la congestión" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Para aliviar                            la congestión" />
 
     </com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/vista_contenido"
-        android:layout_width="400dp"
-        android:layout_height="500dp"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp">
