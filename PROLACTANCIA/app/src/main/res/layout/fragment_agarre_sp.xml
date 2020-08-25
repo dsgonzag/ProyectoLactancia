@@ -7,11 +7,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/layout_moniliasis"
+    android:id="@+id/layout_agarre_sp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/cardview_light_background"
-    tools:context="app.packages.prolactancia.Controladores.mejorar_produccion">
+    tools:context=".Controladores.agarre_sp">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -25,9 +25,9 @@
         android:backgroundTint="@color/cardview_shadow_start_color"
         android:foreground="@color/cardview_shadow_start_color"
         android:padding="3dp"
-        android:text="Dolor y grietas en los pezones por moniliasis:"
+        android:text="Un buen agarre del seno es cuando:"
         android:textColor="@color/design_default_color_on_secondary"
-        android:textSize="14sp"
+        android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,10 +43,9 @@
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
         android:padding="3dp"
-        android:text="A veces, en cualquier momento después del nacimiento, la madre puede
-sentir dolor, picazón y presentar grietas o enrojecimiento en la areola y en el pezón."
+        android:text="La boca de la niña o niño está bien abierta.\nLa parte más oscura del seno (pezón y areola) debe estar dentro de su boca.\nLos labios de la niña o niño deben estar hacia afuera.\nSe escucha cuando la niña o niño traga."
         android:textColor="@color/design_default_color_on_secondary"
-        android:textSize="14sp"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,14 +57,14 @@ sentir dolor, picazón y presentar grietas o enrojecimiento en la areola y en el
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
-        android:padding="3dp"
         android:background="@color/cardview_shadow_start_color"
         android:backgroundTint="@color/cardview_shadow_start_color"
         android:foreground="@color/cardview_shadow_start_color"
-        android:text="Si el niño o niña se siente incómodo y si tiene puntos blancos en la
-lengua y en las encías, se trata de moniliasis, mal de boca, sarro o algodoncillo."
+        android:padding="3dp"
+        android:text="Las señales de una buena succión son:"
         android:textColor="@color/design_default_color_on_secondary"
-        android:textSize="14sp"
+        android:textSize="12sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -78,23 +77,47 @@ lengua y en las encías, se trata de moniliasis, mal de boca, sarro o algodoncil
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
         android:padding="3dp"
-        android:text="La madre debe ir al centro de salud y llevar al niño o niña para que ambos reciban tratamiento médico."
+        android:text="La madre no siente dolor.\nLa succión lenta y profunda, una por segundo aproximadamente, mejillas llenas no hundidas, sonido de deglución.\nLa niña o niño termina de lactar y suelta el pecho por sí mismo, se ve satisfecho."
         android:textColor="@color/design_default_color_on_secondary"
-        android:textSize="14sp"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-    <ImageView
-        android:id="@+id/img_moniliasis"
-        android:layout_width="100dp"
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/dolor_grietas_2"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/cardview_shadow_start_color"
+        android:backgroundTint="@color/cardview_shadow_start_color"
+        android:foreground="@color/cardview_shadow_start_color"
+        android:padding="3dp"
+        android:text="Las señales de mala succión son:"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="12sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:padding="3dp"
+        android:text="La madre siente dolor.\nSucciones rápidas y sonidos de chupeteo y chasquidos.\nMejillas hundidas, se queja y está inquieto, agarra y suelta el pecho una y otra vez.\nLa niña o niño se amamanta muy frecuentemente, por periodos largos, pero no suelta el pecho y parece insatisfecho."
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

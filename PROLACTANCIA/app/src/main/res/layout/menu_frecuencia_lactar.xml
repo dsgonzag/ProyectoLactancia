@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_higiene"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_nuevo"
+    tools:context="app.packages.prolactancia.MenuFrecuenciaLactar">
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="@android:color/background_light"
+        android:layout_below="@id/bt_atras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/bt_atras"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/atras_m" />
+
+    <TextView
+        android:id="@+id/txt_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_toStartOf="@id/bt_home"
+        android:layout_toEndOf="@id/bt_atras"
+        android:padding="5dp"
+        android:paddingTop="15dp"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <ImageButton
+        android:id="@+id/bt_home"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/home_m" />
+
+    <ImageButton
+        android:id="@+id/bt_protege"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/bt_protege" />
+
+    <ImageButton
+        android:id="@+id/bt_duerme"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@id/bt_protege"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/bt_duerme" />
+
+    <ImageButton
+        android:id="@+id/bt_aumentar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@id/bt_protege"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/bt_aumentar" />
+
+    <ImageButton
+        android:id="@+id/bt_frecuencia"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@id/bt_duerme"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/bt_frecuencia_suc" />
+
+    <ImageButton
+        android:id="@+id/bt_pecho"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@id/bt_aumentar"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/bt_pecho" />
+
+</RelativeLayout>

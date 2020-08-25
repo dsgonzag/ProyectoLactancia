@@ -6,9 +6,13 @@ import androidx.viewpager.widget.ViewPager;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import app.packages.prolactancia.Controladores.BeneficiosController;
 
@@ -40,8 +44,7 @@ public class Beneficios extends AppCompatActivity implements View.OnClickListene
         txt_mensaje = findViewById(R.id.txt_mensaje);
         txt_mensaje.setTypeface(tipo_fuente2);
         txt_mensaje.setText("La lactancia materna...\n" +
-                "Tiene grandes beneficios para la\n" +
-                "salud de la madre y el lactante.\n");
+                "Tiene grandes beneficios para la salud de la madre y el lactante.\n");
 
         contenido =  findViewById(R.id.contenido);
         vista_pagina = findViewById(R.id.vista_contenido);
@@ -77,8 +80,52 @@ public class Beneficios extends AppCompatActivity implements View.OnClickListene
         bt_home = findViewById(R.id.bt_home);
         bt_home.setOnClickListener(this);
 
+        redimensionar();
     }
 
+    public void redimensionar(){
+        DisplayMetrics dm = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(dm);
+        int ancho = dm.widthPixels;
+        int alto = dm.heightPixels;
+
+        Toast.makeText (getApplicationContext (), "ancho: " +ancho + " alto: "+alto , Toast.LENGTH_SHORT) .show ();
+
+        //RelativeLayout.LayoutParams params_alim = (RelativeLayout.LayoutParams) bt_alimentacion.getLayoutParams();
+        //RelativeLayout.LayoutParams params_prob= (RelativeLayout.LayoutParams) bt_problemas_lact.getLayoutParams();
+        RelativeLayout.LayoutParams params_cont = (RelativeLayout.LayoutParams) contenido.getLayoutParams();
+        RelativeLayout.LayoutParams params_vp= (RelativeLayout.LayoutParams) vista_pagina.getLayoutParams();
+
+        /*if(ancho< 720){
+            params_cont.width = 450;
+            params_vp.width = 450;
+        }else if(ancho >= 720 && ancho <= 1080){
+            params_cont.width = 650;
+            params_vp.width = 650;
+        }else if(ancho > 1080 && ancho <= 2560){
+            params_cont.width = 650;
+            params_vp.width = 650;
+        }*/
+
+        if(alto<= 800){
+            params_vp.height = 450;
+        }else if(alto > 800 && alto <= 1200){
+            params_vp.height = 650;
+        }else if(alto > 1200 && alto <= 2400){
+            params_vp.height = 800;
+        }
+        /*bt_alimentacion.setLayoutParams(params_alim);
+        bt_alimentacion.setScaleType(ImageView.ScaleType.CENTER_CROP);
+        bt_problemas_lact.setLayoutParams(params_prob);
+        bt_problemas_lact.setScaleType(ImageView.ScaleType.CENTER_CROP);
+        bt_succion.setLayoutParams(params_succ);
+        bt_succion.setScaleType(ImageView.ScaleType.CENTER_CROP);
+        bt_frecuencia_lact.setLayoutParams(params_frec);
+        bt_frecuencia_lact.setScaleType(ImageView.ScaleType.CENTER_CROP);*/
+        contenido.setLayoutParams(params_cont);
+        vista_pagina.setLayoutParams(params_vp);
+
+    }
 
     @Override
     public void onClick(View v) {

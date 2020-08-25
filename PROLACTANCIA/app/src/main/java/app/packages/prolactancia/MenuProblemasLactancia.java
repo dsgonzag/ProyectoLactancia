@@ -3,9 +3,13 @@ package app.packages.prolactancia;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -43,6 +47,7 @@ public class MenuProblemasLactancia extends AppCompatActivity implements View.On
         bt_madre_enf = findViewById(R.id.bt_madre_enf);
         bt_madre_enf.setOnClickListener(this);
 
+        redimensionar();
     }
 
     public void onClick(View v) {
@@ -89,6 +94,79 @@ public class MenuProblemasLactancia extends AppCompatActivity implements View.On
                 break;
             default: break;
         }
+    }
+
+    public void redimensionar(){
+        DisplayMetrics dm = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(dm);
+        int ancho = dm.widthPixels;
+        int alto = dm.heightPixels;
+
+        Toast.makeText (getApplicationContext (), "ancho: " +ancho + " alto: "+alto , Toast.LENGTH_SHORT) .show ();
+
+        RelativeLayout.LayoutParams params_pec = (RelativeLayout.LayoutParams) bt_pechos_con.getLayoutParams();
+        RelativeLayout.LayoutParams params_dol= (RelativeLayout.LayoutParams) bt_dolor.getLayoutParams();
+        RelativeLayout.LayoutParams params_obs = (RelativeLayout.LayoutParams) bt_ductos_obs.getLayoutParams();
+        RelativeLayout.LayoutParams params_mas= (RelativeLayout.LayoutParams) bt_mastitis.getLayoutParams();
+        RelativeLayout.LayoutParams params_abc = (RelativeLayout.LayoutParams) bt_abceso.getLayoutParams();
+        RelativeLayout.LayoutParams params_enf= (RelativeLayout.LayoutParams) bt_madre_enf.getLayoutParams();
+
+        if(ancho<= 720){
+            txt_titulo.setTextSize(20);
+            params_pec.width = 200;
+            params_dol.width = 200;
+            params_obs.width = 200;
+            params_mas.width = 200;
+            params_abc.width = 200;
+            params_enf.width = 200;
+        }else if(ancho > 720 && ancho <= 1080){
+            params_pec.width = 500;
+            params_dol.width = 500;
+            params_obs.width = 500;
+            params_mas.width = 500;
+            params_abc.width = 500;
+            params_enf.width = 500;
+        }
+
+        if(alto<= 1200){
+            params_pec.height = 200;
+            params_pec.bottomMargin = 0;
+            params_dol.height = 200;
+            params_dol.bottomMargin = 0;
+            params_obs.height = 200;
+            params_obs.bottomMargin = 0;
+            params_mas.height = 200;
+            params_mas.bottomMargin = 0;
+            params_abc.height = 200;
+            params_abc.bottomMargin = 30;
+            params_enf.height = 200;
+            params_enf.bottomMargin = 30;
+        }else if(alto > 1200 && alto <= 2400){
+            params_pec.height = 500;
+            params_pec.bottomMargin = 100;
+            params_dol.height = 500;
+            params_dol.bottomMargin = 100;
+            params_obs.height = 500;
+            params_obs.bottomMargin = 400;
+            params_mas.height = 500;
+            params_mas.bottomMargin = 400;
+            params_abc.height = 500;
+            params_abc.bottomMargin = 400;
+            params_enf.height = 500;
+            params_enf.bottomMargin = 400;
+        }
+        bt_pechos_con.setLayoutParams(params_pec);
+        bt_pechos_con.setScaleType(ImageView.ScaleType.CENTER_CROP);
+        bt_dolor.setLayoutParams(params_dol);
+        bt_dolor.setScaleType(ImageView.ScaleType.CENTER_CROP);
+        bt_ductos_obs.setLayoutParams(params_obs);
+        bt_ductos_obs.setScaleType(ImageView.ScaleType.CENTER_CROP);
+        bt_mastitis.setLayoutParams(params_mas);
+        bt_mastitis.setScaleType(ImageView.ScaleType.CENTER_CROP);
+        bt_abceso.setLayoutParams(params_abc);
+        bt_abceso.setScaleType(ImageView.ScaleType.CENTER_CROP);
+        bt_madre_enf.setLayoutParams(params_enf);
+        bt_madre_enf.setScaleType(ImageView.ScaleType.CENTER_CROP);
     }
 
     @Override

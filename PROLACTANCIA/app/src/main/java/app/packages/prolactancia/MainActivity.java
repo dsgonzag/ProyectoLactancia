@@ -5,8 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.DisplayMetrics;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import app.packages.prolactancia.R;
 
@@ -55,5 +59,8 @@ public class MainActivity extends AppCompatActivity {
 
             th.start();
         }
+
+
     }
+
 }

@@ -2,11 +2,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/layout_higiene"
+    android:id="@+id/layout_succion_posicion"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_nuevo"
-    tools:context="app.packages.prolactancia.Higiene">
+    tools:context="app.packages.prolactancia.SuccionPosicion">
 
     <View
         android:id="@+id/divider"
@@ -39,7 +39,7 @@
         android:padding="5dp"
         android:paddingTop="15dp"
         android:textAlignment="center"
-        android:textSize="24sp" />
+        android:textSize="18sp" />
 
     <ImageButton
         android:id="@+id/bt_home"
@@ -57,9 +57,9 @@
         android:layout_height="100dp"
         android:layout_above="@id/contenido"
         android:layout_below="@id/divider"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="10dp"
-        app:srcCompat="@drawable/beneficios_1" />
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        app:srcCompat="@drawable/succion_pos_1" />
 
     <TextView
         android:id="@+id/txt_mensaje"
@@ -67,13 +67,10 @@
         android:layout_height="100dp"
         android:layout_above="@id/contenido"
         android:layout_below="@id/divider"
-        android:paddingTop="5sp"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="10dp"
-        android:layout_toEndOf="@+id/img_representativa"
-        android:textAlignment="viewEnd"
-        android:textAllCaps="false"
-        android:textDirection="firstStrongLtr"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toStartOf="@+id/img_representativa"
+        android:textAlignment="viewStart"
         android:textSize="14sp" />
 
     <com.google.android.material.tabs.TabLayout
@@ -95,16 +92,22 @@
         app:tabTextColor="#000000">
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/tab_cuando"
+            android:id="@+id/tab_agarre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="¿Cuándo lavarse                  las manos?" />
+            android:text="Buen agarre          del seno" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/tab_como"
+            android:id="@+id/tab_forma"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="¿Cómo lavarse                    las manos?" />
+            android:text="Forma             correcta" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_cesarea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cesárea o           dos bebés" />
 
     </com.google.android.material.tabs.TabLayout>
 

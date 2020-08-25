@@ -15,7 +15,9 @@
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".MadreEnferma"></activity>
+        <activity android:name=".MenuFrecuenciaLactar"></activity>
+        <activity android:name=".SuccionPosicion" />
+        <activity android:name=".MadreEnferma" />
         <activity android:name=".Abceso" />
         <activity android:name=".Mastitis" />
         <activity android:name=".DuctosObstruidos" />
