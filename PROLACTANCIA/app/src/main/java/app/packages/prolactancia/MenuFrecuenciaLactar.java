@@ -55,34 +55,29 @@ public class MenuFrecuenciaLactar extends AppCompatActivity implements View.OnCl
                 startActivity(siguiente);
                 break;
             case R.id.bt_frecuencia:
-                Toast.makeText (getApplicationContext (), "boton frecuencia" , Toast.LENGTH_SHORT) .show ();
-                /*siguiente = new Intent(MenuFrecuenciaLactar.this, Alimentacion.class);
+                siguiente = new Intent(MenuFrecuenciaLactar.this, FrecuenciaSuccion.class);
                 this.finish();
-                startActivity(siguiente);*/
+                startActivity(siguiente);
                 break;
             case R.id.bt_pecho:
-                Toast.makeText (getApplicationContext (), "boton pecho" , Toast.LENGTH_SHORT) .show ();
-                /*siguiente = new Intent(MenuFrecuenciaLactar.this, MenuProblemasLactancia.class);
+                siguiente = new Intent(MenuFrecuenciaLactar.this, SoloPecho.class);
                 this.finish();
-                startActivity(siguiente);*/
+                startActivity(siguiente);
                 break;
             case R.id.bt_duerme:
-                Toast.makeText (getApplicationContext (), "boton duerme" , Toast.LENGTH_SHORT) .show ();
-                /*siguiente = new Intent(MenuFrecuenciaLactar.this, SuccionPosicion.class);
+                siguiente = new Intent(MenuFrecuenciaLactar.this, DuermeSuelta.class);
                 this.finish();
-                startActivity(siguiente);*/
+                startActivity(siguiente);
                 break;
             case R.id.bt_aumentar:
-                Toast.makeText (getApplicationContext (), "boton aumentar" , Toast.LENGTH_SHORT) .show ();
-                /*siguiente = new Intent(MenuFrecuenciaLactar.this, SuccionPosicion.class);
+                siguiente = new Intent(MenuFrecuenciaLactar.this, AumentarProduccion.class);
                 this.finish();
-                startActivity(siguiente);*/
+                startActivity(siguiente);
                 break;
             case R.id.bt_protege:
-                Toast.makeText (getApplicationContext (), "boton protege" , Toast.LENGTH_SHORT) .show ();
-                /*siguiente = new Intent(MenuFrecuenciaLactar.this, SuccionPosicion.class);
+                siguiente = new Intent(MenuFrecuenciaLactar.this, ProtegeLactancia.class);
                 this.finish();
-                startActivity(siguiente);*/
+                startActivity(siguiente);
                 break;
             default: break;
         }

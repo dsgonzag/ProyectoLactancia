@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/layout_alimentacion"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_solo_pecho_fg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/cardview_light_background"
-        tools:context="app.packages.prolactancia.Controladores.mejorar_produccion">
+        tools:context="app.packages.prolactancia.Controladores.solo_pecho">
 
         <!-- TODO: Update blank fragment layout -->
 
@@ -26,8 +26,8 @@
             android:backgroundTint="@color/cardview_shadow_start_color"
             android:foreground="@color/cardview_shadow_start_color"
             android:padding="3dp"
-            android:text="Para mejorar el contenido de grasa de la leche materna, consumir una o
-dos veces por semana pescado, trocitos de aguacate o de chonta."
+            android:text="Porque cuando a un niño o niña le dan biberón u otras comidas antes
+de los 6 meses le pueden dar diarreas y enfermarse más a menudo."
             android:textColor="@color/design_default_color_on_secondary"
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -44,8 +44,7 @@ dos veces por semana pescado, trocitos de aguacate o de chonta."
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
             android:padding="3dp"
-            android:text="Además de las comidas principales (desayuno, almuerzo y merienda),
-agregar un refrigerio nutritivo en la mañana y otro en la tarde."
+            android:text="Porque cuando a un niño o niña le dan biberón o chupones el bebé se confunde y rechaza el pecho."
             android:textColor="@color/design_default_color_on_secondary"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -63,8 +62,7 @@ agregar un refrigerio nutritivo en la mañana y otro en la tarde."
             android:background="@color/cardview_shadow_start_color"
             android:backgroundTint="@color/cardview_shadow_start_color"
             android:foreground="@color/cardview_shadow_start_color"
-            android:text="Durante los primeros tres meses después del parto, usted debe recibir
-vitaminas y minerales adicionales a los que ingiere con su alimentación."
+            android:text="Porque el niño o niña amamanta menos cada vez que toma agüitas, técitos, otras leches, o recibe otra comida."
             android:textColor="@color/design_default_color_on_secondary"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -79,9 +77,7 @@ vitaminas y minerales adicionales a los que ingiere con su alimentación."
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
             android:padding="3dp"
-            android:text="Solicitar en el centro de salud más cercano las tabletas de hierro y
-otras vitaminas. Tomar una tableta al día con agua o jugo de frutas cítricas, dos horas antes
-o después del almuerzo. No la tome con leche o infusiones."
+            android:text="Si el niño o niña amamanta menos, la madre produce menos leche y se le puede secar."
             android:textColor="@color/design_default_color_on_secondary"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -89,15 +85,48 @@ o después del almuerzo. No la tome con leche o infusiones."
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:padding="3dp"
+            android:background="@color/cardview_shadow_start_color"
+            android:backgroundTint="@color/cardview_shadow_start_color"
+            android:foreground="@color/cardview_shadow_start_color"
+            android:text="Por cada mamada que el niño o niña no reciba tendrá menos protección contra las enfermedades."
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:padding="3dp"
+            android:text="Durante los primeros 6 meses si el niño o niña tiene sed o hambre hay que darle solo pecho y nada más."
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
         <ImageView
-            android:id="@+id/img_mejorar_1"
+            android:id="@+id/img_fg_pecho_1"
             android:layout_width="wrap_content"
-            android:layout_height="120dp"
-            android:src="@drawable/alimentacion_2"
+            android:layout_height="150dp"
+            android:src="@drawable/solo_pecho_2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

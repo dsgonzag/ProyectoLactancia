@@ -15,7 +15,12 @@
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".MenuFrecuenciaLactar"></activity>
+        <activity android:name=".ProtegeLactancia"></activity>
+        <activity android:name=".SoloPecho" />
+        <activity android:name=".DuermeSuelta" />
+        <activity android:name=".AumentarProduccion" />
+        <activity android:name=".FrecuenciaSuccion" />
+        <activity android:name=".MenuFrecuenciaLactar" />
         <activity android:name=".SuccionPosicion" />
         <activity android:name=".MadreEnferma" />
         <activity android:name=".Abceso" />
