@@ -53,10 +53,14 @@ public class MenuPrincipal extends AppCompatActivity implements  View.OnClickLis
                 startActivity(siguiente);
                 break;
             case R.id.bt_extraccion:
-                Toast.makeText (getApplicationContext (), "boton extracción" , Toast.LENGTH_SHORT) .show ();
+                siguiente = new Intent(MenuPrincipal.this, MenuExtraccion.class);
+                this.finish();
+                startActivity(siguiente);
                 break;
             case R.id.bt_donacion:
-                Toast.makeText (getApplicationContext (), "boton donación" , Toast.LENGTH_SHORT) .show ();
+                siguiente = new Intent(MenuPrincipal.this, Donacion.class);
+                this.finish();
+                startActivity(siguiente);
                 break;
             case R.id.bt_higiene:
                 siguiente = new Intent(MenuPrincipal.this, Higiene.class);
@@ -64,7 +68,9 @@ public class MenuPrincipal extends AppCompatActivity implements  View.OnClickLis
                 startActivity(siguiente);
                 break;
             case R.id.bt_mitos:
-                Toast.makeText (getApplicationContext (), "boton mitos" , Toast.LENGTH_SHORT) .show ();
+                siguiente = new Intent(MenuPrincipal.this, MitosVerdades.class);
+                this.finish();
+                startActivity(siguiente);
                 break;
             default: break;
         }
@@ -107,7 +113,21 @@ public class MenuPrincipal extends AppCompatActivity implements  View.OnClickLis
             params_4.width = 300;
             params_5.width = 300;
             params_6.width = 300;
-        }else if(ancho > 720 && ancho <= 1080){
+        }else if(ancho > 720 && ancho <= 840){
+            params_1.width = 350;
+            params_2.width = 350;
+            params_3.width = 350;
+            params_4.width = 350;
+            params_5.width = 350;
+            params_6.width = 350;
+        }else if(ancho > 840 && ancho <= 960){
+            params_1.width = 400;
+            params_2.width = 400;
+            params_3.width = 400;
+            params_4.width = 400;
+            params_5.width = 400;
+            params_6.width = 400;
+        }else if(ancho > 960 && ancho <= 1080){
             params_1.width = 500;
             params_2.width = 500;
             params_3.width = 500;
@@ -129,7 +149,7 @@ public class MenuPrincipal extends AppCompatActivity implements  View.OnClickLis
             params_5.bottomMargin = 30;
             params_6.height = 200;
             params_6.bottomMargin = 30;
-        }else if(alto > 800 && alto <= 1200){
+        }else if(alto > 800 && alto <= 1280){
             params_1.height = 300;
             params_1.bottomMargin = 0;
             params_2.height = 300;
@@ -142,7 +162,8 @@ public class MenuPrincipal extends AppCompatActivity implements  View.OnClickLis
             params_5.bottomMargin = 50;
             params_6.height = 300;
             params_6.bottomMargin = 50;
-        }else if(alto > 1200 && alto <= 2400){
+        }else if(alto > 1280 && alto <= 2400){
+            Toast.makeText (getApplicationContext (), "en el if de alto" , Toast.LENGTH_SHORT) .show ();
             params_1.height = 500;
             params_1.bottomMargin = 50;
             params_2.height = 500;

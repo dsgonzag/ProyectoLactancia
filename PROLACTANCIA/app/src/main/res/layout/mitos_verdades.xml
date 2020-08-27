@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_mitos_verdades"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_nuevo"
+    tools:context="app.packages.prolactancia.EstimulacionExtraccion">
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="@android:color/background_light"
+        android:layout_below="@id/bt_atras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/bt_atras"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/atras_m" />
+
+    <TextView
+        android:id="@+id/txt_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_toLeftOf="@id/bt_home"
+        android:layout_toRightOf="@id/bt_atras"
+        android:padding="5dp"
+        android:paddingTop="15dp"
+        android:textAlignment="center"
+        android:textSize="22sp" />
+
+    <ImageButton
+        android:id="@+id/bt_home"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/home_m" />
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/contenido"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/vista_contenido"
+        android:layout_centerHorizontal="true"
+        android:background="@color/cardview_light_background"
+        android:textAlignment="center"
+        android:textDirection="inherit"
+        app:tabIndicatorColor="#E91E63"
+        app:tabIndicatorGravity="bottom"
+        app:tabMaxWidth="400dp"
+        app:tabMode="fixed"
+        app:tabRippleColor="@android:color/holo_red_light"
+        app:tabSelectedTextColor="#E91E63"
+        app:tabTextAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:tabTextColor="#000000">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_mitos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mitos" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_verdades"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verdades" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vista_contenido"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp">
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+</RelativeLayout>

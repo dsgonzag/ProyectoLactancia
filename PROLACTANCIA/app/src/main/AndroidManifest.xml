@@ -15,7 +15,12 @@
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".ProtegeLactancia"></activity>
+        <activity android:name=".MitosVerdades"></activity>
+        <activity android:name=".Donacion" />
+        <activity android:name=".AlmacenamientoTraslado" />
+        <activity android:name=".MenuExtraccion" />
+        <activity android:name=".EstimulacionExtraccion" />
+        <activity android:name=".ProtegeLactancia" />
         <activity android:name=".SoloPecho" />
         <activity android:name=".DuermeSuelta" />
         <activity android:name=".AumentarProduccion" />

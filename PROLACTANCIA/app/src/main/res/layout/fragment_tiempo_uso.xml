@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/layout_tiempo_uso_fg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cardview_light_background"
+        tools:context="app.packages.prolactancia.Controladores.mastitis">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/cardview_shadow_start_color"
+            android:backgroundTint="@color/cardview_shadow_start_color"
+            android:foreground="@color/cardview_shadow_start_color"
+            android:padding="3dp"
+            android:text="La leche recolectada se debe almacenar en un frasco de vidrio con tapa
+rosca de plástico esterilizado o bolsas recolectoras."
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.009" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:padding="3dp"
+            android:text="La leche materna podrá ser almacenada en refrigerador por un período
+máximo de 24 a 72 horas, a una temperatura de hasta 5 °C o en congelador o freezer por un período
+máximo de 15 días, a una temperatura de - 18°C."
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/cardview_shadow_start_color"
+            android:backgroundTint="@color/cardview_shadow_start_color"
+            android:foreground="@color/cardview_shadow_start_color"
+            android:padding="3dp"
+            android:text="Registrar fecha y hora de la extracción."
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:padding="3dp"
+            android:text="Uso:"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/cardview_shadow_start_color"
+            android:backgroundTint="@color/cardview_shadow_start_color"
+            android:foreground="@color/cardview_shadow_start_color"
+            android:padding="3dp"
+            android:text="Utilizar la leche con más tiempo en el refrigerador o congelador."
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:padding="3dp"
+            android:text="Descongelar la leche una noche anterior en el refrigerador; colocándola
+en un recipiente que tenga agua caliente."
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/cardview_shadow_start_color"
+            android:backgroundTint="@color/cardview_shadow_start_color"
+            android:foreground="@color/cardview_shadow_start_color"
+            android:padding="3dp"
+            android:text="No usar microondas, ya que el descongelamiento es desigual y podría generar quemaduras al bebé."
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:padding="3dp"
+            android:text="Después de haber calentado la leche materna y posteriormente alimentado
+al bebé con jeringuilla o vasito para no interferir en el aprendizaje posterior de la lactancia,
+se puede mantener la leche en una duración de dos horas, pasado ese tiempo se debe desechar."
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
