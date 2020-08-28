@@ -1,6 +1,7 @@
 package app.packages.prolactancia;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
@@ -21,6 +22,7 @@ public class MenuProblemasLactancia extends AppCompatActivity implements View.On
     TextView txt_titulo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_problemas_lactancia);
 
@@ -128,7 +130,7 @@ public class MenuProblemasLactancia extends AppCompatActivity implements View.On
             params_enf.width = 500;
         }
 
-        if(alto<= 1200){
+        if(alto<= 800){
             params_pec.height = 200;
             params_pec.bottomMargin = 0;
             params_dol.height = 200;
@@ -141,19 +143,32 @@ public class MenuProblemasLactancia extends AppCompatActivity implements View.On
             params_abc.bottomMargin = 30;
             params_enf.height = 200;
             params_enf.bottomMargin = 30;
-        }else if(alto > 1200 && alto <= 2400){
+        }else if(alto > 800 && alto <= 1280){
+            params_pec.height = 300;
+            params_pec.bottomMargin = 0;
+            params_dol.height = 300;
+            params_dol.bottomMargin = 0;
+            params_obs.height = 300;
+            params_obs.bottomMargin = 0;
+            params_mas.height = 300;
+            params_mas.bottomMargin = 0;
+            params_abc.height = 300;
+            params_abc.bottomMargin = 50;
+            params_enf.height = 300;
+            params_enf.bottomMargin = 50;
+        }else if(alto > 1280 && alto <= 2400){
             params_pec.height = 500;
-            params_pec.bottomMargin = 100;
+            params_pec.bottomMargin = 0;
             params_dol.height = 500;
-            params_dol.bottomMargin = 100;
+            params_dol.bottomMargin = 0;
             params_obs.height = 500;
-            params_obs.bottomMargin = 400;
+            params_obs.bottomMargin = 0;
             params_mas.height = 500;
-            params_mas.bottomMargin = 400;
+            params_mas.bottomMargin = 0;
             params_abc.height = 500;
-            params_abc.bottomMargin = 400;
+            params_abc.bottomMargin = 100;
             params_enf.height = 500;
-            params_enf.bottomMargin = 400;
+            params_enf.bottomMargin = 100;
         }
         bt_pechos_con.setLayoutParams(params_pec);
         bt_pechos_con.setScaleType(ImageView.ScaleType.CENTER_CROP);

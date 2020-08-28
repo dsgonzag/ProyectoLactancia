@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
@@ -28,8 +29,10 @@ public class Beneficios extends AppCompatActivity implements View.OnClickListene
     TabItem tab_madre,tab_hijo;
     BeneficiosController b_controlador;
     ImageButton bt_atras,bt_home;
+    ImageView representativa;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.beneficios);
 
@@ -48,6 +51,7 @@ public class Beneficios extends AppCompatActivity implements View.OnClickListene
 
         contenido =  findViewById(R.id.contenido);
         vista_pagina = findViewById(R.id.vista_contenido);
+        representativa = findViewById(R.id.img_representativa);
         tab_madre = findViewById(R.id.tab_madre);
         tab_hijo = findViewById(R.id.tab_hijo);
 
@@ -89,40 +93,43 @@ public class Beneficios extends AppCompatActivity implements View.OnClickListene
         int ancho = dm.widthPixels;
         int alto = dm.heightPixels;
 
-        Toast.makeText (getApplicationContext (), "ancho: " +ancho + " alto: "+alto , Toast.LENGTH_SHORT) .show ();
+        //Toast.makeText (getApplicationContext (), "ancho: " +ancho + " alto: "+alto , Toast.LENGTH_SHORT) .show ();
 
-        //RelativeLayout.LayoutParams params_alim = (RelativeLayout.LayoutParams) bt_alimentacion.getLayoutParams();
-        //RelativeLayout.LayoutParams params_prob= (RelativeLayout.LayoutParams) bt_problemas_lact.getLayoutParams();
+        RelativeLayout.LayoutParams params_rep = (RelativeLayout.LayoutParams) representativa.getLayoutParams();
+        RelativeLayout.LayoutParams params_men= (RelativeLayout.LayoutParams) txt_mensaje.getLayoutParams();
         RelativeLayout.LayoutParams params_cont = (RelativeLayout.LayoutParams) contenido.getLayoutParams();
         RelativeLayout.LayoutParams params_vp= (RelativeLayout.LayoutParams) vista_pagina.getLayoutParams();
 
-        /*if(ancho< 720){
-            params_cont.width = 450;
-            params_vp.width = 450;
-        }else if(ancho >= 720 && ancho <= 1080){
-            params_cont.width = 650;
-            params_vp.width = 650;
-        }else if(ancho > 1080 && ancho <= 2560){
-            params_cont.width = 650;
-            params_vp.width = 650;
-        }*/
+        if(ancho<= 480){
+            params_rep.width = 100;
+        }else if(ancho > 480 && ancho <= 720){
+            params_rep.width = 150;
+        }else if(ancho > 720 && ancho <= 1080){
+            params_rep.width = 250;
+        }else if(ancho > 1080 && ancho <= 1440){
+            params_rep.width = 350;
+        }
 
         if(alto<= 800){
-            params_vp.height = 450;
-        }else if(alto > 800 && alto <= 1200){
+            params_vp.height = 400;
+        }else if(alto > 800 && alto <= 1280){
+            txt_mensaje.setTextSize(15);
             params_vp.height = 650;
-        }else if(alto > 1200 && alto <= 2400){
+        }else if(alto > 1280 && alto <= 1440){
+            txt_mensaje.setTextSize(20);
             params_vp.height = 800;
+        }else if(alto > 1400 && alto <= 1720){
+            txt_mensaje.setTextSize(21);
+            params_vp.height = 1000;
+        }else if(alto > 1720 && alto <= 2040){
+            txt_mensaje.setTextSize(22);
+            params_vp.height = 1200;
+        }else if(alto > 2040 && alto <= 2560){
+            params_vp.height = 1500;
         }
-        /*bt_alimentacion.setLayoutParams(params_alim);
-        bt_alimentacion.setScaleType(ImageView.ScaleType.CENTER_CROP);
-        bt_problemas_lact.setLayoutParams(params_prob);
-        bt_problemas_lact.setScaleType(ImageView.ScaleType.CENTER_CROP);
-        bt_succion.setLayoutParams(params_succ);
-        bt_succion.setScaleType(ImageView.ScaleType.CENTER_CROP);
-        bt_frecuencia_lact.setLayoutParams(params_frec);
-        bt_frecuencia_lact.setScaleType(ImageView.ScaleType.CENTER_CROP);*/
-        contenido.setLayoutParams(params_cont);
+
+        //contenido.setLayoutParams(params_cont);
+        representativa.setLayoutParams(params_rep);
         vista_pagina.setLayoutParams(params_vp);
 
     }

@@ -8,7 +8,7 @@
     android:fillViewport="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/layout_madre"
+        android:id="@+id/layout_madre_fg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/formato_boton_inf"

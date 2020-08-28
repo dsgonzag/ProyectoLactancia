@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/layout_informate_dg"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/cardview_light_background"
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_informate_fg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/formato_boton_inf"
+        android:foregroundTint="@android:color/transparent"
     tools:context="app.packages.prolactancia.Controladores.informate_dg">
 
     <!-- TODO: Update blank fragment layout -->

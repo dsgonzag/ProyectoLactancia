@@ -3,19 +3,22 @@ package app.packages.prolactancia;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Mastitis extends AppCompatActivity implements  View.OnClickListener{
 
     TextView txt_titulo,txt_mensaje;
     ImageButton bt_atras,bt_home;
-
+    ImageView representativa;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mastitis);
 
@@ -32,6 +35,7 @@ public class Mastitis extends AppCompatActivity implements  View.OnClickListener
         txt_mensaje.setText("La mastitis...\n" +
                 "es una infección mamaria que generalmente causa dolor en los pechos y sesibilidad.\n");
 
+        representativa = findViewById(R.id.img_representativa);
 
         bt_atras = findViewById(R.id.bt_atras);
         bt_atras.setOnClickListener(this);

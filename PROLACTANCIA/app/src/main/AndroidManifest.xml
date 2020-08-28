@@ -15,7 +15,9 @@
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".MitosVerdades"></activity>
+        <activity android:name=".VideoHigiene"></activity>
+        <activity android:name=".VideoBeneficios" />
+        <activity android:name=".MitosVerdades" />
         <activity android:name=".Donacion" />
         <activity android:name=".AlmacenamientoTraslado" />
         <activity android:name=".MenuExtraccion" />

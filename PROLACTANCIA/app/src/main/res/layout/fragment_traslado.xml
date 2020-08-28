@@ -11,8 +11,9 @@
         android:id="@+id/layout_traslado_fg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/cardview_light_background"
-        tools:context=".Controladores.forma_sp">
+        android:background="@drawable/formato_boton_inf"
+        android:foregroundTint="@android:color/transparent"
+        tools:context=".Controladores.traslado">
 
         <!-- TODO: Update blank fragment layout -->
 

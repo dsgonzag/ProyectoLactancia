@@ -3,21 +3,23 @@ package app.packages.prolactancia;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MenuExtraccion extends AppCompatActivity implements View.OnClickListener {
     Intent siguiente;
     ImageButton bt_atras, bt_home, bt_estimulacion, bt_almacenamiento;
     TextView txt_titulo, txt_mensaje;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu_extraccion);
+        setContentView(R.layout.menu_extraccion);
 
         txt_titulo = findViewById(R.id.txt_titulo);
         String fuente1 = "fuentes/Comfortaa-Bold.ttf";

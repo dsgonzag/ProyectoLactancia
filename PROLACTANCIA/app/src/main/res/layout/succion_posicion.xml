@@ -75,13 +75,16 @@
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/contenido"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         android:layout_above="@id/vista_contenido"
         android:layout_centerHorizontal="true"
-        android:background="@color/cardview_light_background"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/formato_boton_sup"
         android:textAlignment="center"
         android:textDirection="inherit"
+        app:tabBackground="@android:color/transparent"
         app:tabIndicatorColor="#E91E63"
         app:tabIndicatorGravity="bottom"
         app:tabMaxWidth="400dp"
@@ -95,29 +98,33 @@
             android:id="@+id/tab_agarre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Buen agarre          del seno" />
+            android:text="Buen agarre del seno" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tab_forma"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Forma             correcta" />
+            android:text="Forma correcta" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tab_cesarea"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cesárea o           dos bebés" />
+            android:text="Cesárea o dos bebés" />
 
     </com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/vista_contenido"
-        android:layout_width="350dp"
+        android:layout_width="match_parent"
         android:layout_height="350dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp">
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/formato_boton_inf"
+        android:backgroundTint="@android:color/transparent">
 
     </androidx.viewpager.widget.ViewPager>
 

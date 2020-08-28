@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.View;
@@ -20,6 +21,7 @@ public class MenuPrincipal extends AppCompatActivity implements  View.OnClickLis
     Intent siguiente;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_principal);
 
@@ -82,7 +84,7 @@ public class MenuPrincipal extends AppCompatActivity implements  View.OnClickLis
         int ancho = dm.widthPixels;
         int alto = dm.heightPixels;
 
-        Toast.makeText (getApplicationContext (), "ancho: " +ancho + " alto: "+alto , Toast.LENGTH_SHORT) .show ();
+        //Toast.makeText (getApplicationContext (), "ancho: " +ancho + " alto: "+alto , Toast.LENGTH_SHORT) .show ();
 
         ConstraintLayout.LayoutParams params_1 = (ConstraintLayout.LayoutParams) bt_beneficios.getLayoutParams();
         ConstraintLayout.LayoutParams params_2 = (ConstraintLayout.LayoutParams) bt_lactancia.getLayoutParams();
@@ -163,7 +165,7 @@ public class MenuPrincipal extends AppCompatActivity implements  View.OnClickLis
             params_6.height = 300;
             params_6.bottomMargin = 50;
         }else if(alto > 1280 && alto <= 2400){
-            Toast.makeText (getApplicationContext (), "en el if de alto" , Toast.LENGTH_SHORT) .show ();
+            //Toast.makeText (getApplicationContext (), "en el if de alto" , Toast.LENGTH_SHORT) .show ();
             params_1.height = 500;
             params_1.bottomMargin = 50;
             params_2.height = 500;

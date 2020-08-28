@@ -4,10 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import app.packages.prolactancia.Controladores.PechosCongestionadosController;
@@ -24,8 +28,10 @@ public class PechosCongestionados extends AppCompatActivity implements  View.OnC
     TabItem tab_informate,tab_aliviar_cong;
     PechosCongestionadosController pc_controlador;
     ImageButton bt_atras,bt_home;
+    ImageView representativa;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pechos_congestionados);
 
@@ -44,6 +50,7 @@ public class PechosCongestionados extends AppCompatActivity implements  View.OnC
 
         contenido =  findViewById(R.id.contenido);
         vista_pagina = findViewById(R.id.vista_contenido);
+        representativa = findViewById(R.id.img_representativa);
         tab_informate = findViewById(R.id.tab_informate);
         tab_aliviar_cong = findViewById(R.id.tab_aliviar_cong);
 
@@ -75,6 +82,54 @@ public class PechosCongestionados extends AppCompatActivity implements  View.OnC
         bt_atras.setOnClickListener(this);
         bt_home = findViewById(R.id.bt_home);
         bt_home.setOnClickListener(this);
+
+        redimensionar();
+    }
+
+    public void redimensionar(){
+        DisplayMetrics dm = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(dm);
+        int ancho = dm.widthPixels;
+        int alto = dm.heightPixels;
+
+        //Toast.makeText (getApplicationContext (), "ancho: " +ancho + " alto: "+alto , Toast.LENGTH_SHORT) .show ();
+
+        RelativeLayout.LayoutParams params_rep = (RelativeLayout.LayoutParams) representativa.getLayoutParams();
+        RelativeLayout.LayoutParams params_men= (RelativeLayout.LayoutParams) txt_mensaje.getLayoutParams();
+        RelativeLayout.LayoutParams params_cont = (RelativeLayout.LayoutParams) contenido.getLayoutParams();
+        RelativeLayout.LayoutParams params_vp= (RelativeLayout.LayoutParams) vista_pagina.getLayoutParams();
+
+        if(ancho<= 480){
+            params_rep.width = 100;
+        }else if(ancho > 480 && ancho <= 720){
+            params_rep.width = 150;
+        }else if(ancho > 720 && ancho <= 1080){
+            params_rep.width = 250;
+        }else if(ancho > 1080 && ancho <= 1440){
+            params_rep.width = 350;
+        }
+
+        if(alto<= 800){
+            params_vp.height = 400;
+        }else if(alto > 800 && alto <= 1280){
+            txt_mensaje.setTextSize(15);
+            params_vp.height = 650;
+        }else if(alto > 1280 && alto <= 1440){
+            txt_mensaje.setTextSize(20);
+            params_vp.height = 800;
+        }else if(alto > 1400 && alto <= 1720){
+            txt_mensaje.setTextSize(21);
+            params_vp.height = 1000;
+        }else if(alto > 1720 && alto <= 2040){
+            txt_mensaje.setTextSize(22);
+            params_vp.height = 1200;
+        }else if(alto > 2040 && alto <= 2560){
+            params_vp.height = 1500;
+        }
+
+        //contenido.setLayoutParams(params_cont);
+        representativa.setLayoutParams(params_rep);
+        vista_pagina.setLayoutParams(params_vp);
 
     }
 

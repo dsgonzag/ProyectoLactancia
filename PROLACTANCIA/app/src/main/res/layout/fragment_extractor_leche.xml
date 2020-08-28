@@ -8,11 +8,12 @@
     android:fillViewport="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/layout_extractor_leche_fg"
+        android:id="@+id/layout_extractor_fg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/cardview_light_background"
-        tools:context="app.packages.prolactancia.Controladores.mejorar_produccion">
+        android:background="@drawable/formato_boton_inf"
+        android:foregroundTint="@android:color/transparent"
+        tools:context="app.packages.prolactancia.Controladores.extractor_leche">
 
         <!-- TODO: Update blank fragment layout -->
 
