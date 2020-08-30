@@ -19,7 +19,8 @@ public class Abceso extends AppCompatActivity implements  View.OnClickListener{
     TextView txt_titulo,txt_mensaje;
     ImageButton bt_atras,bt_home;
     ImageView representativa;
-    Fragment contenido;
+    //Fragment contenido;
+    View contenido;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -40,13 +41,14 @@ public class Abceso extends AppCompatActivity implements  View.OnClickListener{
                 "es una acumulación dolorosa de pus que se forma en el seno\n");
 
         representativa = findViewById(R.id.img_representativa);
-
+        contenido = findViewById(R.id.contenido);
 
         bt_atras = findViewById(R.id.bt_atras);
         bt_atras.setOnClickListener(this);
         bt_home = findViewById(R.id.bt_home);
         bt_home.setOnClickListener(this);
 
+        redimensionar();
     }
 
     public void redimensionar(){
@@ -59,7 +61,7 @@ public class Abceso extends AppCompatActivity implements  View.OnClickListener{
 
         RelativeLayout.LayoutParams params_rep = (RelativeLayout.LayoutParams) representativa.getLayoutParams();
         RelativeLayout.LayoutParams params_men= (RelativeLayout.LayoutParams) txt_mensaje.getLayoutParams();
-        //RelativeLayout.LayoutParams params_cont = (RelativeLayout.LayoutParams) contenido.getLayoutParams();
+        RelativeLayout.LayoutParams params_cont = (RelativeLayout.LayoutParams) contenido.getLayoutParams();
         //RelativeLayout.LayoutParams params_vp= (RelativeLayout.LayoutParams) vista_pagina.getLayoutParams();
 
         if(ancho<= 480){
@@ -67,30 +69,33 @@ public class Abceso extends AppCompatActivity implements  View.OnClickListener{
         }else if(ancho > 480 && ancho <= 720){
             params_rep.width = 150;
         }else if(ancho > 720 && ancho <= 1080){
+            txt_titulo.setTextSize(24);
             params_rep.width = 250;
         }else if(ancho > 1080 && ancho <= 1440){
             params_rep.width = 350;
         }
 
         if(alto<= 800){
-            //params_vp.height = 400;
-        }else if(alto > 800 && alto <= 1280){
             txt_mensaje.setTextSize(15);
-            //params_vp.height = 650;
+            params_cont.height = 400;
+        }else if(alto > 800 && alto <= 1280){
+            txt_mensaje.setTextSize(17);
+            params_cont.height = 600;
         }else if(alto > 1280 && alto <= 1440){
-            txt_mensaje.setTextSize(20);
-            //params_vp.height = 800;
+            txt_mensaje.setTextSize(19);
+            params_cont.height = 800;
         }else if(alto > 1400 && alto <= 1720){
             txt_mensaje.setTextSize(21);
-            //params_vp.height = 1000;
+            params_cont.height = 1000;
         }else if(alto > 1720 && alto <= 2040){
             txt_mensaje.setTextSize(22);
-            //params_vp.height = 1200;
+            params_cont.height = 1400;
         }else if(alto > 2040 && alto <= 2560){
-           // params_vp.height = 1500;
+            txt_mensaje.setTextSize(14);
+            params_cont.height = 1600;
         }
 
-        //contenido.setLayoutParams(params_cont);
+        contenido.setLayoutParams(params_cont);
         representativa.setLayoutParams(params_rep);
         //vista_pagina.setLayoutParams(params_vp);
 

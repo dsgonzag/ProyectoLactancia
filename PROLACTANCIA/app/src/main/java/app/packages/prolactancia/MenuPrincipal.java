@@ -78,13 +78,13 @@ public class MenuPrincipal extends AppCompatActivity implements  View.OnClickLis
         }
     }
 
-    public void redimensionar(){
+    public void redimensionar(){//j7 720*1280
         DisplayMetrics dm = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(dm);
         int ancho = dm.widthPixels;
         int alto = dm.heightPixels;
 
-        //Toast.makeText (getApplicationContext (), "ancho: " +ancho + " alto: "+alto , Toast.LENGTH_SHORT) .show ();
+        Toast.makeText (getApplicationContext (), "ancho: " +ancho + " alto: "+alto , Toast.LENGTH_SHORT) .show ();
 
         ConstraintLayout.LayoutParams params_1 = (ConstraintLayout.LayoutParams) bt_beneficios.getLayoutParams();
         ConstraintLayout.LayoutParams params_2 = (ConstraintLayout.LayoutParams) bt_lactancia.getLayoutParams();
@@ -130,13 +130,35 @@ public class MenuPrincipal extends AppCompatActivity implements  View.OnClickLis
             params_5.width = 400;
             params_6.width = 400;
         }else if(ancho > 960 && ancho <= 1080){
+            params_1.width = 450;
+            params_2.width = 450;
+            params_3.width = 450;
+            params_4.width = 450;
+            params_5.width = 450;
+            params_6.width = 450;
+        }else if(ancho > 1080 && ancho <= 1200){
             params_1.width = 500;
             params_2.width = 500;
             params_3.width = 500;
             params_4.width = 500;
             params_5.width = 500;
             params_6.width = 500;
+        }else if(ancho > 1200 && ancho <= 1320){
+            params_1.width = 550;
+            params_2.width = 550;
+            params_3.width = 550;
+            params_4.width = 550;
+            params_5.width = 550;
+            params_6.width = 550;
+        }else if(ancho > 1320 && ancho <= 1440){
+            params_1.width = 600;
+            params_2.width = 600;
+            params_3.width = 600;
+            params_4.width = 600;
+            params_5.width = 600;
+            params_6.width = 600;
         }
+
 
         if(alto<= 800){
             params_1.height = 200;
@@ -164,8 +186,20 @@ public class MenuPrincipal extends AppCompatActivity implements  View.OnClickLis
             params_5.bottomMargin = 50;
             params_6.height = 300;
             params_6.bottomMargin = 50;
-        }else if(alto > 1280 && alto <= 2400){
-            //Toast.makeText (getApplicationContext (), "en el if de alto" , Toast.LENGTH_SHORT) .show ();
+        }else if(alto > 1280 && alto <= 1920){
+            params_1.height = 400;
+            params_1.bottomMargin = 0;
+            params_2.height = 400;
+            params_2.bottomMargin = 0;
+            params_3.height = 400;
+            params_3.bottomMargin = 0;
+            params_4.height = 400;
+            params_4.bottomMargin = 0;
+            params_5.height = 400;
+            params_5.bottomMargin = 50;
+            params_6.height = 400;
+            params_6.bottomMargin = 50;
+        }else if(alto > 1920 && alto <= 2160){
             params_1.height = 500;
             params_1.bottomMargin = 50;
             params_2.height = 500;
@@ -177,6 +211,19 @@ public class MenuPrincipal extends AppCompatActivity implements  View.OnClickLis
             params_5.height = 500;
             params_5.bottomMargin = 100;
             params_6.height = 500;
+            params_6.bottomMargin = 100;
+        }else if(alto > 2160 && alto <= 2560) {
+            params_1.height = 600;
+            params_1.bottomMargin = 50;
+            params_2.height = 600;
+            params_2.bottomMargin = 50;
+            params_3.height = 600;
+            params_3.bottomMargin = 50;
+            params_4.height = 600;
+            params_4.bottomMargin = 50;
+            params_5.height = 600;
+            params_5.bottomMargin = 100;
+            params_6.height = 600;
             params_6.bottomMargin = 100;
         }
         bt_beneficios.setLayoutParams(params_1);
@@ -194,7 +241,7 @@ public class MenuPrincipal extends AppCompatActivity implements  View.OnClickLis
     }
 
     @Override
-    public void onBackPressed() {
+    public void onBackPressed(){
         super.onDestroy();
         System.exit(0);
     }

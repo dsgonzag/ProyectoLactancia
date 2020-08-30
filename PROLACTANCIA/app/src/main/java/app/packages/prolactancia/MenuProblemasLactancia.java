@@ -104,84 +104,196 @@ public class MenuProblemasLactancia extends AppCompatActivity implements View.On
         int ancho = dm.widthPixels;
         int alto = dm.heightPixels;
 
-        Toast.makeText (getApplicationContext (), "ancho: " +ancho + " alto: "+alto , Toast.LENGTH_SHORT) .show ();
+        //Toast.makeText (getApplicationContext (), "ancho: " +ancho + " alto: "+alto , Toast.LENGTH_SHORT) .show ();
 
-        RelativeLayout.LayoutParams params_pec = (RelativeLayout.LayoutParams) bt_pechos_con.getLayoutParams();
-        RelativeLayout.LayoutParams params_dol= (RelativeLayout.LayoutParams) bt_dolor.getLayoutParams();
-        RelativeLayout.LayoutParams params_obs = (RelativeLayout.LayoutParams) bt_ductos_obs.getLayoutParams();
-        RelativeLayout.LayoutParams params_mas= (RelativeLayout.LayoutParams) bt_mastitis.getLayoutParams();
-        RelativeLayout.LayoutParams params_abc = (RelativeLayout.LayoutParams) bt_abceso.getLayoutParams();
-        RelativeLayout.LayoutParams params_enf= (RelativeLayout.LayoutParams) bt_madre_enf.getLayoutParams();
+        RelativeLayout.LayoutParams params_1 = (RelativeLayout.LayoutParams) bt_pechos_con.getLayoutParams();
+        RelativeLayout.LayoutParams params_2= (RelativeLayout.LayoutParams) bt_dolor.getLayoutParams();
+        RelativeLayout.LayoutParams params_3 = (RelativeLayout.LayoutParams) bt_ductos_obs.getLayoutParams();
+        RelativeLayout.LayoutParams params_4= (RelativeLayout.LayoutParams) bt_mastitis.getLayoutParams();
+        RelativeLayout.LayoutParams params_5 = (RelativeLayout.LayoutParams) bt_abceso.getLayoutParams();
+        RelativeLayout.LayoutParams params_6= (RelativeLayout.LayoutParams) bt_madre_enf.getLayoutParams();
 
-        if(ancho<= 720){
+        RelativeLayout.LayoutParams params_7 = (RelativeLayout.LayoutParams) bt_atras.getLayoutParams();
+        RelativeLayout.LayoutParams params_8= (RelativeLayout.LayoutParams) bt_home.getLayoutParams();
+
+        if(ancho<= 480){
+            txt_titulo.setPadding(5,15,5,5);
             txt_titulo.setTextSize(20);
-            params_pec.width = 200;
-            params_dol.width = 200;
-            params_obs.width = 200;
-            params_mas.width = 200;
-            params_abc.width = 200;
-            params_enf.width = 200;
-        }else if(ancho > 720 && ancho <= 1080){
-            params_pec.width = 500;
-            params_dol.width = 500;
-            params_obs.width = 500;
-            params_mas.width = 500;
-            params_abc.width = 500;
-            params_enf.width = 500;
+            params_1.width = 200;
+            params_2.width = 200;
+            params_3.width = 200;
+            params_4.width = 200;
+            params_5.width = 200;
+            params_6.width = 200;
+            //params_7.width = 200;
+            //params_8.width = 200;
+        }else if(ancho > 480 && ancho <= 600){
+            txt_titulo.setPadding(5,15,5,5);
+            txt_titulo.setTextSize(20);
+            params_1.width = 250;
+            params_2.width = 250;
+            params_3.width = 250;
+            params_4.width = 250;
+            params_5.width = 250;
+            params_6.width = 250;
+            //params_7.width = 125;
+            //params_8.width = 125;
+        }else if(ancho > 600 && ancho <= 720){
+            txt_titulo.setPadding(5,15,5,5);
+            txt_titulo.setTextSize(22);
+            params_1.width = 300;
+            params_2.width = 300;
+            params_3.width = 300;
+            params_4.width = 300;
+            params_5.width = 300;
+            params_6.width = 300;
+            //params_7.width = 150;
+            //params_8.width = 150;
+        }else if(ancho > 720 && ancho <= 840){
+            txt_titulo.setPadding(5,10,5,5);
+            txt_titulo.setTextSize(24);
+            params_1.width = 350;
+            params_2.width = 350;
+            params_3.width = 350;
+            params_4.width = 350;
+            params_5.width = 350;
+            params_6.width = 350;
+            //params_7.width = 175;
+            //params_8.width = 175;
+        }else if(ancho > 840 && ancho <= 960){
+            txt_titulo.setPadding(5,10,5,5);
+            txt_titulo.setTextSize(26);
+            params_1.width = 400;
+            params_2.width = 400;
+            params_3.width = 400;
+            params_4.width = 400;
+            params_5.width = 400;
+            params_6.width = 400;
+            //params_7.width = 200;
+            //params_8.width = 200;
+        }else if(ancho > 960 && ancho <= 1080){
+            txt_titulo.setPadding(5,10,5,5);
+            txt_titulo.setTextSize(28);
+            params_1.width = 450;
+            params_2.width = 450;
+            params_3.width = 450;
+            params_4.width = 450;
+            params_5.width = 450;
+            params_6.width = 450;
+            params_7.width = 220;
+            params_8.width = 220;
+        }else if(ancho > 1080 && ancho <= 1200){
+            txt_titulo.setPadding(5,10,5,5);
+            txt_titulo.setTextSize(28);
+            params_1.width = 500;
+            params_2.width = 500;
+            params_3.width = 500;
+            params_4.width = 500;
+            params_5.width = 500;
+            params_6.width = 500;
+            params_7.width = 240;
+            params_8.width = 240;
+        }else if(ancho > 1200 && ancho <= 1320){
+            txt_titulo.setPadding(5,10,5,5);
+            txt_titulo.setTextSize(28);
+            params_1.width = 550;
+            params_2.width = 550;
+            params_3.width = 550;
+            params_4.width = 550;
+            params_5.width = 550;
+            params_6.width = 550;
+            params_7.width = 260;
+            params_8.width = 260;
+        }else if(ancho > 1320 && ancho <= 1440){
+            txt_titulo.setPadding(5,10,5,5);
+            txt_titulo.setTextSize(30);
+            params_1.width = 600;
+            params_2.width = 600;
+            params_3.width = 600;
+            params_4.width = 600;
+            params_5.width = 600;
+            params_6.width = 600;
+            params_7.width = 275;
+            params_8.width = 275;
         }
+
 
         if(alto<= 800){
-            params_pec.height = 200;
-            params_pec.bottomMargin = 0;
-            params_dol.height = 200;
-            params_dol.bottomMargin = 0;
-            params_obs.height = 200;
-            params_obs.bottomMargin = 0;
-            params_mas.height = 200;
-            params_mas.bottomMargin = 0;
-            params_abc.height = 200;
-            params_abc.bottomMargin = 30;
-            params_enf.height = 200;
-            params_enf.bottomMargin = 30;
+            params_1.height = 200;
+            params_1.bottomMargin = 10;
+            params_2.height = 200;
+            params_2.bottomMargin = 10;
+            params_3.height = 200;
+            params_3.bottomMargin = 10;
+            params_4.height = 200;
+            params_4.bottomMargin = 10;
+            params_5.height = 200;
+            params_5.bottomMargin = 10;
+            params_6.height = 200;
+            params_6.bottomMargin = 10;
+            //params_7.height = 200;
+            //params_8.height = 200;
         }else if(alto > 800 && alto <= 1280){
-            params_pec.height = 300;
-            params_pec.bottomMargin = 0;
-            params_dol.height = 300;
-            params_dol.bottomMargin = 0;
-            params_obs.height = 300;
-            params_obs.bottomMargin = 0;
-            params_mas.height = 300;
-            params_mas.bottomMargin = 0;
-            params_abc.height = 300;
-            params_abc.bottomMargin = 50;
-            params_enf.height = 300;
-            params_enf.bottomMargin = 50;
-        }else if(alto > 1280 && alto <= 2400){
-            params_pec.height = 500;
-            params_pec.bottomMargin = 0;
-            params_dol.height = 500;
-            params_dol.bottomMargin = 0;
-            params_obs.height = 500;
-            params_obs.bottomMargin = 0;
-            params_mas.height = 500;
-            params_mas.bottomMargin = 0;
-            params_abc.height = 500;
-            params_abc.bottomMargin = 100;
-            params_enf.height = 500;
-            params_enf.bottomMargin = 100;
+            params_1.height = 300;
+            params_1.bottomMargin = 20;
+            params_2.height = 300;
+            params_2.bottomMargin = 20;
+            params_3.height = 300;
+            params_3.bottomMargin = 20;
+            params_4.height = 300;
+            params_4.bottomMargin = 20;
+            params_5.height = 300;
+            params_5.bottomMargin = 20;
+            params_6.height = 300;
+            params_6.bottomMargin = 20;
+            //params_7.height = 300;
+            //params_8.height = 300;
+        }else if(alto > 1280 && alto <= 1920){
+            params_1.height = 400;
+            params_1.bottomMargin = 30;
+            params_2.height = 400;
+            params_2.bottomMargin = 30;
+            params_3.height = 400;
+            params_3.bottomMargin = 30;
+            params_4.height = 400;
+            params_4.bottomMargin = 30;
+            params_5.height = 400;
+            params_5.bottomMargin = 30;
+            params_6.height = 400;
+            params_6.bottomMargin = 30;
+            //params_7.height = 400;
+            //params_8.height = 400;
+        }else if(alto > 1920 && alto <= 2160){
+            params_1.height = 550;
+            params_1.bottomMargin = 20;
+            params_2.height = 550;
+            params_2.bottomMargin = 20;
+            params_3.height = 550;
+            params_3.bottomMargin = 20;
+            params_4.height = 550;
+            params_4.bottomMargin = 20;
+            params_5.height = 550;
+            params_5.bottomMargin = 40;
+            params_6.height = 550;
+            params_6.bottomMargin = 40;
+            params_7.height = 220;
+            params_8.height = 220;
+        }else if(alto > 2160 && alto <= 2560) {
+            params_1.height = 600;
+            params_1.bottomMargin = 50;
+            params_2.height = 600;
+            params_2.bottomMargin = 50;
+            params_3.height = 600;
+            params_3.bottomMargin = 50;
+            params_4.height = 600;
+            params_4.bottomMargin = 50;
+            params_5.height = 600;
+            params_5.bottomMargin = 50;
+            params_6.height = 600;
+            params_6.bottomMargin = 50;
+            params_7.height = 275;
+            params_8.height = 275;
         }
-        bt_pechos_con.setLayoutParams(params_pec);
-        bt_pechos_con.setScaleType(ImageView.ScaleType.CENTER_CROP);
-        bt_dolor.setLayoutParams(params_dol);
-        bt_dolor.setScaleType(ImageView.ScaleType.CENTER_CROP);
-        bt_ductos_obs.setLayoutParams(params_obs);
-        bt_ductos_obs.setScaleType(ImageView.ScaleType.CENTER_CROP);
-        bt_mastitis.setLayoutParams(params_mas);
-        bt_mastitis.setScaleType(ImageView.ScaleType.CENTER_CROP);
-        bt_abceso.setLayoutParams(params_abc);
-        bt_abceso.setScaleType(ImageView.ScaleType.CENTER_CROP);
-        bt_madre_enf.setLayoutParams(params_enf);
-        bt_madre_enf.setScaleType(ImageView.ScaleType.CENTER_CROP);
     }
 
     @Override

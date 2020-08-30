@@ -11,7 +11,7 @@
         android:id="@+id/layout_pecho_fg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/formato_boton_inf"
+        android:background="@drawable/formato_boton"
         android:foregroundTint="@android:color/transparent"
         tools:context="app.packages.prolactancia.Controladores.solo_pecho">
 
@@ -23,6 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
+            android:layout_marginTop="20dp"
             android:background="@color/cardview_shadow_start_color"
             android:backgroundTint="@color/cardview_shadow_start_color"
             android:foreground="@color/cardview_shadow_start_color"
@@ -121,8 +122,9 @@ de los 6 meses le pueden dar diarreas y enfermarse más a menudo."
 
         <ImageView
             android:id="@+id/img_fg_pecho_1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="150dp"
+            android:layout_marginBottom="10dp"
             android:src="@drawable/solo_pecho_2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

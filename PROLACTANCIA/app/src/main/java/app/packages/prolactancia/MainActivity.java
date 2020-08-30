@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                             e.getLocalizedMessage();
                         }
                         if (i==100){
-                            menuprincipal = new Intent(MainActivity.this, MenuPrincipal.class);
+                            menuprincipal = new Intent(MainActivity.this, MenuProblemasLactancia.class);
                             startActivity(menuprincipal);
                         }
                         i+=10;
