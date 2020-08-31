@@ -10,7 +10,7 @@ import android.os.Bundle;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
-public class VideoBeneficios extends AppCompatActivity {
+public class VideoBeneficios2 extends AppCompatActivity {
 
     VideoView vd_beneficios;
     @Override
@@ -19,7 +19,7 @@ public class VideoBeneficios extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.video_beneficios);
 
-        String rutavideo = "android.resource://"+getPackageName()+"/"+R.raw.beneficios_madre;
+        String rutavideo = "android.resource://"+getPackageName()+"/"+R.raw.beneficios_hijo;
         Uri uri = Uri.parse(rutavideo);
 
         final Intent benef = new Intent(this, Beneficios.class);

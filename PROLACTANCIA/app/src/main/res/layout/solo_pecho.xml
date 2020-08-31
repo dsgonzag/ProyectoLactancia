@@ -53,8 +53,8 @@
 
     <ImageView
         android:id="@+id/img_representativa"
-        android:layout_width="75dp"
-        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
         android:layout_above="@id/contenido"
         android:layout_below="@id/divider"
         android:layout_alignParentRight="true"
@@ -70,13 +70,13 @@
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="10dp"
         android:layout_toStartOf="@+id/img_representativa"
-        android:textAlignment="viewStart"
+        android:gravity="center_vertical"
         android:textSize="14sp" />
 
     <fragment
         android:id="@+id/contenido"
         android:name="app.packages.prolactancia.Controladores.solo_pecho"
-        android:layout_width="350dp"
+        android:layout_width="match_parent"
         android:layout_height="400dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"

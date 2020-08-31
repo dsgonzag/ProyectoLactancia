@@ -53,24 +53,26 @@
 
     <ImageView
         android:id="@+id/img_representativa"
-        android:layout_width="75dp"
+        android:layout_width="wrap_content"
         android:layout_height="100dp"
         android:layout_above="@id/contenido"
         android:layout_below="@id/divider"
+        android:scaleType="fitEnd"
         android:layout_alignParentRight="true"
         android:layout_marginRight="10dp"
         app:srcCompat="@drawable/succion_pos_1" />
 
     <TextView
         android:id="@+id/txt_mensaje"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_above="@id/contenido"
         android:layout_below="@id/divider"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
         android:layout_toStartOf="@+id/img_representativa"
-        android:textAlignment="viewStart"
+        android:textDirection="anyRtl"
         android:textSize="14sp" />
 
     <com.google.android.material.tabs.TabLayout

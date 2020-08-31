@@ -57,6 +57,7 @@
         android:layout_height="100dp"
         android:layout_above="@id/contenido"
         android:layout_below="@id/divider"
+        android:scaleType="centerInside"
         android:layout_alignParentRight="true"
         android:layout_marginRight="10dp"
         app:srcCompat="@drawable/frecuencia_succion_1" />
@@ -68,15 +69,15 @@
         android:layout_above="@id/contenido"
         android:layout_below="@id/divider"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="20dp"
         android:layout_toStartOf="@+id/img_representativa"
-        android:textAlignment="viewStart"
+        android:gravity="center_vertical"
         android:textSize="14sp" />
 
     <fragment
         android:id="@+id/contenido"
         android:name="app.packages.prolactancia.Controladores.frecuencia_succion"
-        android:layout_width="350dp"
+        android:layout_width="match_parent"
         android:layout_height="400dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"

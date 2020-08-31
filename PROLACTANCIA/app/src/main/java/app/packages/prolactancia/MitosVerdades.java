@@ -86,36 +86,100 @@ public class MitosVerdades extends AppCompatActivity implements  View.OnClickLis
         int alto = dm.heightPixels;
 
 
-        RelativeLayout.LayoutParams params_cont = (RelativeLayout.LayoutParams) contenido.getLayoutParams();
-        RelativeLayout.LayoutParams params_vp= (RelativeLayout.LayoutParams) vista_pagina.getLayoutParams();
+        //RelativeLayout.LayoutParams params_1 = (RelativeLayout.LayoutParams) representativa.getLayoutParams();
+        RelativeLayout.LayoutParams params_2= (RelativeLayout.LayoutParams) vista_pagina.getLayoutParams();
+        //RelativeLayout.LayoutParams params_3 = (RelativeLayout.LayoutParams) bt_duerme.getLayoutParams();
+        //RelativeLayout.LayoutParams params_4= (RelativeLayout.LayoutParams) bt_aumentar.getLayoutParams();
+        //RelativeLayout.LayoutParams params_5 = (RelativeLayout.LayoutParams) bt_protege.getLayoutParams();
+        //RelativeLayout.LayoutParams params_6= (RelativeLayout.LayoutParams) bt_madre_enf.getLayoutParams();
+
+        RelativeLayout.LayoutParams params_7 = (RelativeLayout.LayoutParams) bt_atras.getLayoutParams();
+        RelativeLayout.LayoutParams params_8= (RelativeLayout.LayoutParams) bt_home.getLayoutParams();
 
         if(ancho<= 480){
-           // params_rep.width = 100;
-        }else if(ancho > 480 && ancho <= 720){
-            //params_rep.width = 150;
-        }else if(ancho > 720 && ancho <= 1080){
-            //params_rep.width = 250;
-        }else if(ancho > 1080 && ancho <= 1440){
-            //params_rep.width = 350;
+            txt_titulo.setPadding(5,5,5,5);
+            txt_titulo.setTextSize(26);
+            //params_1.width = 100;
+        }else if(ancho > 480 && ancho <= 600){
+            txt_titulo.setPadding(5,5,5,5);
+            txt_titulo.setTextSize(26);
+            //params_1.width = 150;
+        }else if(ancho > 600 && ancho <= 720){
+            txt_titulo.setPadding(5,5,5,5);
+            txt_titulo.setTextSize(28);
+            //params_1.width = 200;
+        }else if(ancho > 720 && ancho <= 840){
+            txt_titulo.setPadding(5,5,5,5);
+            txt_titulo.setTextSize(26);
+            //params_1.width = 250;
+        }else if(ancho > 840 && ancho <= 960){
+            txt_titulo.setPadding(5,5,5,5);
+            txt_titulo.setTextSize(26);
+            //params_1.width = 300;
+        }else if(ancho > 960 && ancho <= 1080){
+            txt_titulo.setPadding(5,0,5,5);
+            txt_titulo.setTextSize(26);
+            //params_1.width = 350;
+            params_7.width = 220;
+            params_8.width = 220;
+        }else if(ancho > 1080 && ancho <= 1200){
+            txt_titulo.setPadding(5,5,5,5);
+            txt_titulo.setTextSize(28);
+            //params_1.width = 400;
+            params_7.width = 240;
+            params_8.width = 240;
+        }else if(ancho > 1200 && ancho <= 1320){
+            txt_titulo.setPadding(5,5,5,5);
+            txt_titulo.setTextSize(28);
+            //params_1.width = 450;
+            params_7.width = 260;
+            params_8.width = 260;
+        }else if(ancho > 1320 && ancho <= 1440){
+            txt_titulo.setPadding(5,5,5,5);
+            txt_titulo.setTextSize(28);
+            //params_1.width = 500;
+            params_7.width = 275;
+            params_8.width = 275;
+        }else if(ancho > 1440){
+            txt_titulo.setPadding(5,5,5,5);
+            txt_titulo.setTextSize(30);
+            //params_1.width = 500;
+            params_7.width = 275;
+            params_8.width = 275;
         }
+
 
         if(alto<= 800){
-            params_vp.height = 500;
+            //params_1.height = 100;
+            params_2.height = 500;
         }else if(alto > 800 && alto <= 1280){
-            params_vp.height = 750;
-        }else if(alto > 1280 && alto <= 1440){
-            params_vp.height = 900;
-        }else if(alto > 1400 && alto <= 1720){
-            params_vp.height = 1100;
-        }else if(alto > 1720 && alto <= 2040){
-            params_vp.height = 1300;
-        }else if(alto > 2040 && alto <= 2560){
-            params_vp.height = 1400;
+            //params_1.height = 200;
+            params_2.height = 800;
+        }else if(alto > 1280 && alto <= 1800){
+            //params_1.height = 220;
+            params_2.height = 1100;
+        }else if(alto > 1800 && alto <= 1920){
+            //params_1.height = 220;
+            params_2.height = 1200;
+        }else if(alto > 1920 && alto <= 2160){
+            //params_1.height = 250;
+            params_2.height = 1350;
+
+            params_7.height = 220;
+            params_8.height = 220;
+        }else if(alto > 2160 && alto <= 2560) {
+            //params_1.height = 300;
+            params_2.height = 1500;
+
+            params_7.height = 275;
+            params_8.height = 275;
+        }else if(alto > 2560) {
+            //params_1.height = 300;
+            params_2.height = 1500;
+
+            params_7.height = 275;
+            params_8.height = 275;
         }
-
-        //contenido.setLayoutParams(params_cont);
-        vista_pagina.setLayoutParams(params_vp);
-
     }
 
     @Override

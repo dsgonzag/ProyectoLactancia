@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import app.packages.prolactancia.R;
 import app.packages.prolactancia.VideoBeneficios;
+import app.packages.prolactancia.VideoBeneficios2;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -73,7 +74,7 @@ public class hijo extends Fragment {
         ver_video.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent video = new Intent(getActivity(), VideoBeneficios.class);
+                Intent video = new Intent(getActivity(), VideoBeneficios2.class);
                 startActivity(video);
             }
         });

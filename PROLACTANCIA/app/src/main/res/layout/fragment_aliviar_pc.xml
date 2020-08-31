@@ -76,8 +76,8 @@ Debe asegurarse que el niño o niña esté en buena posición (agarrando bien el
 
     <ImageView
         android:id="@+id/img_informate_1"
-        android:layout_width="130dp"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
         android:baselineAlignBottom="true"
         android:src="@drawable/pechos_cong_3"
         app:layout_constraintBottom_toBottomOf="parent"

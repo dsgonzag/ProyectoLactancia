@@ -58,8 +58,8 @@ bien o no está mamando con frecuencia, los pechos también se pueden congestion
 
     <ImageView
         android:id="@+id/img_informate_1"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
         android:baselineAlignBottom="true"
         android:src="@drawable/pechos_cong_2"
         app:layout_constraintBottom_toBottomOf="parent"

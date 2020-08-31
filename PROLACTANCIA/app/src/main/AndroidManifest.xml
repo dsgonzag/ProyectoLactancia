@@ -4,6 +4,7 @@
     package="app.packages.prolactancia">
 
     <uses-permission android:name="Android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -15,7 +16,9 @@
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".VideoHigiene"></activity>
+        <activity android:name=".VideoBeneficios2"></activity>
+        <activity android:name=".Maps" />
+        <activity android:name=".VideoHigiene" />
         <activity android:name=".VideoBeneficios" />
         <activity android:name=".MitosVerdades" />
         <activity android:name=".Donacion" />

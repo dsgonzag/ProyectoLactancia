@@ -151,7 +151,7 @@ public class MenuProblemasLactancia extends AppCompatActivity implements View.On
             //params_8.width = 150;
         }else if(ancho > 720 && ancho <= 840){
             txt_titulo.setPadding(5,10,5,5);
-            txt_titulo.setTextSize(24);
+            txt_titulo.setTextSize(22);
             params_1.width = 350;
             params_2.width = 350;
             params_3.width = 350;
@@ -162,7 +162,7 @@ public class MenuProblemasLactancia extends AppCompatActivity implements View.On
             //params_8.width = 175;
         }else if(ancho > 840 && ancho <= 960){
             txt_titulo.setPadding(5,10,5,5);
-            txt_titulo.setTextSize(26);
+            txt_titulo.setTextSize(22);
             params_1.width = 400;
             params_2.width = 400;
             params_3.width = 400;
@@ -173,7 +173,7 @@ public class MenuProblemasLactancia extends AppCompatActivity implements View.On
             //params_8.width = 200;
         }else if(ancho > 960 && ancho <= 1080){
             txt_titulo.setPadding(5,10,5,5);
-            txt_titulo.setTextSize(28);
+            txt_titulo.setTextSize(22);
             params_1.width = 450;
             params_2.width = 450;
             params_3.width = 450;
@@ -184,7 +184,7 @@ public class MenuProblemasLactancia extends AppCompatActivity implements View.On
             params_8.width = 220;
         }else if(ancho > 1080 && ancho <= 1200){
             txt_titulo.setPadding(5,10,5,5);
-            txt_titulo.setTextSize(28);
+            txt_titulo.setTextSize(24);
             params_1.width = 500;
             params_2.width = 500;
             params_3.width = 500;
@@ -195,7 +195,7 @@ public class MenuProblemasLactancia extends AppCompatActivity implements View.On
             params_8.width = 240;
         }else if(ancho > 1200 && ancho <= 1320){
             txt_titulo.setPadding(5,10,5,5);
-            txt_titulo.setTextSize(28);
+            txt_titulo.setTextSize(24);
             params_1.width = 550;
             params_2.width = 550;
             params_3.width = 550;
@@ -206,7 +206,18 @@ public class MenuProblemasLactancia extends AppCompatActivity implements View.On
             params_8.width = 260;
         }else if(ancho > 1320 && ancho <= 1440){
             txt_titulo.setPadding(5,10,5,5);
-            txt_titulo.setTextSize(30);
+            txt_titulo.setTextSize(28);
+            params_1.width = 600;
+            params_2.width = 600;
+            params_3.width = 600;
+            params_4.width = 600;
+            params_5.width = 600;
+            params_6.width = 600;
+            params_7.width = 275;
+            params_8.width = 275;
+        }else if(ancho > 1440){
+            txt_titulo.setPadding(5,10,5,5);
+            txt_titulo.setTextSize(28);
             params_1.width = 600;
             params_2.width = 600;
             params_3.width = 600;
@@ -279,6 +290,21 @@ public class MenuProblemasLactancia extends AppCompatActivity implements View.On
             params_7.height = 220;
             params_8.height = 220;
         }else if(alto > 2160 && alto <= 2560) {
+            params_1.height = 600;
+            params_1.bottomMargin = 50;
+            params_2.height = 600;
+            params_2.bottomMargin = 50;
+            params_3.height = 600;
+            params_3.bottomMargin = 50;
+            params_4.height = 600;
+            params_4.bottomMargin = 50;
+            params_5.height = 600;
+            params_5.bottomMargin = 50;
+            params_6.height = 600;
+            params_6.bottomMargin = 50;
+            params_7.height = 275;
+            params_8.height = 275;
+        }else if(alto > 2560) {
             params_1.height = 600;
             params_1.bottomMargin = 50;
             params_2.height = 600;

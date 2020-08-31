@@ -1,6 +1,5 @@
 package app.packages.prolactancia.Controladores;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -8,18 +7,15 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 
-import app.packages.prolactancia.Maps;
 import app.packages.prolactancia.R;
-import app.packages.prolactancia.VideoBeneficios2;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link banco#newInstance} factory method to
+ * Use the {@link maps#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class banco extends Fragment {
+public class maps extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -30,7 +26,7 @@ public class banco extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public banco() {
+    public maps() {
         // Required empty public constructor
     }
 
@@ -40,11 +36,11 @@ public class banco extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment banco.
+     * @return A new instance of fragment maps.
      */
     // TODO: Rename and change types and number of parameters
-    public static banco newInstance(String param1, String param2) {
-        banco fragment = new banco();
+    public static maps newInstance(String param1, String param2) {
+        maps fragment = new maps();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -64,17 +60,7 @@ public class banco extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-        View view = inflater.inflate(R.layout.fragment_banco, container, false);
-
-        ImageButton ir_mapa = view.findViewById(R.id.bt_buscar_centros);
-        ir_mapa.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent mapa = new Intent(getActivity(), Maps.class);
-                startActivity(mapa);
-            }
-        });
-        return view;
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_maps, container, false);
     }
 }

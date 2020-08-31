@@ -19,7 +19,7 @@ public class VideoHigiene extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.video_higiene);
 
-        String rutavideo = "android.resource://"+getPackageName()+"/"+R.raw.higiene;
+        String rutavideo = "android.resource://"+getPackageName()+"/"+R.raw.beneficios_madre;
         Uri uri = Uri.parse(rutavideo);
 
         final Intent hig = new Intent(this, Higiene.class);

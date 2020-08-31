@@ -155,7 +155,7 @@ public class MenuLactancia extends AppCompatActivity implements View.OnClickList
             //params_6.width = 200;
         }else if(ancho > 960 && ancho <= 1080){
             txt_titulo.setPadding(5,25,5,5);
-            txt_titulo.setTextSize(40);
+            txt_titulo.setTextSize(37);
             params_1.width = 450;
             params_2.width = 450;
             params_3.width = 450;
@@ -220,13 +220,13 @@ public class MenuLactancia extends AppCompatActivity implements View.OnClickList
             params_6.bottomMargin = 50;*/
         }else if(alto > 1280 && alto <= 1920){
             params_1.height = 400;
-            params_1.bottomMargin = 0;
+            params_1.bottomMargin = 100;
             params_2.height = 400;
-            params_2.bottomMargin = 0;
+            params_2.bottomMargin = 100;
             params_3.height = 400;
-            params_3.bottomMargin = 0;
+            params_3.bottomMargin = 200;
             params_4.height = 400;
-            params_4.bottomMargin = 0;
+            params_4.bottomMargin = 200;
             /*params_5.height = 400;
             params_5.bottomMargin = 50;
             params_6.height = 400;

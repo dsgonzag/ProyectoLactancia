@@ -117,17 +117,22 @@ public class abceso extends Fragment {
             t3.setTextSize(16);
             t4.setTextSize(16);
         }else if(alto > 1720 && alto <= 2040){
-            t1.setTextSize(18);
+            t1.setTextSize(16);
             params_i1.height = 400;
+            t3.setTextSize(16);
+            t4.setTextSize(16);
+        }else if(alto > 2040 && alto <= 2560){
+            t1.setTextSize(18);
+            params_i1.height = 600;
             t3.setTextSize(18);
             t4.setTextSize(18);
-        }else if(alto > 2040 && alto <= 2560){
+        }else if(alto > 2560){
             t1.setTextSize(20);
             params_i1.height = 600;
             t3.setTextSize(20);
             t4.setTextSize(20);
         }
-         i1.setLayoutParams(params_i1);
+        i1.setLayoutParams(params_i1);
 
     }
 }

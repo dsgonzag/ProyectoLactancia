@@ -93,45 +93,116 @@ public class AlmacenamientoTraslado extends AppCompatActivity implements  View.O
         int ancho = dm.widthPixels;
         int alto = dm.heightPixels;
 
-        //Toast.makeText (getApplicationContext (), "ancho: " +ancho + " alto: "+alto , Toast.LENGTH_SHORT) .show ();
 
-        RelativeLayout.LayoutParams params_rep = (RelativeLayout.LayoutParams) representativa.getLayoutParams();
-        RelativeLayout.LayoutParams params_men= (RelativeLayout.LayoutParams) txt_mensaje.getLayoutParams();
-        RelativeLayout.LayoutParams params_cont = (RelativeLayout.LayoutParams) contenido.getLayoutParams();
-        RelativeLayout.LayoutParams params_vp= (RelativeLayout.LayoutParams) vista_pagina.getLayoutParams();
+        RelativeLayout.LayoutParams params_1 = (RelativeLayout.LayoutParams) representativa.getLayoutParams();
+        RelativeLayout.LayoutParams params_2= (RelativeLayout.LayoutParams) vista_pagina.getLayoutParams();
+        //RelativeLayout.LayoutParams params_3 = (RelativeLayout.LayoutParams) bt_duerme.getLayoutParams();
+        //RelativeLayout.LayoutParams params_4= (RelativeLayout.LayoutParams) bt_aumentar.getLayoutParams();
+        //RelativeLayout.LayoutParams params_5 = (RelativeLayout.LayoutParams) bt_protege.getLayoutParams();
+        //RelativeLayout.LayoutParams params_6= (RelativeLayout.LayoutParams) bt_madre_enf.getLayoutParams();
+
+        RelativeLayout.LayoutParams params_7 = (RelativeLayout.LayoutParams) bt_atras.getLayoutParams();
+        RelativeLayout.LayoutParams params_8= (RelativeLayout.LayoutParams) bt_home.getLayoutParams();
 
         if(ancho<= 480){
-            params_rep.width = 100;
-        }else if(ancho > 480 && ancho <= 720){
-            params_rep.width = 150;
-        }else if(ancho > 720 && ancho <= 1080){
-            params_rep.width = 250;
-        }else if(ancho > 1080 && ancho <= 1440){
-            params_rep.width = 350;
+            txt_titulo.setPadding(5,0,5,5);
+            txt_titulo.setTextSize(16);
+            txt_mensaje.setTextSize(14);
+            params_1.width = 100;
+        }else if(ancho > 480 && ancho <= 600){
+            txt_titulo.setPadding(5,0,5,5);
+            txt_titulo.setTextSize(16);
+            txt_mensaje.setTextSize(14);
+            params_1.width = 150;
+        }else if(ancho > 600 && ancho <= 720){
+            txt_titulo.setPadding(5,0,5,5);
+            txt_titulo.setTextSize(18);
+            txt_mensaje.setTextSize(16);
+            params_1.width = 200;
+        }else if(ancho > 720 && ancho <= 840){
+            txt_titulo.setPadding(5,0,5,5);
+            txt_titulo.setTextSize(18);
+            txt_mensaje.setTextSize(16);
+            params_1.width = 250;
+        }else if(ancho > 840 && ancho <= 960){
+            txt_titulo.setPadding(5,0,5,5);
+            txt_titulo.setTextSize(18);
+            txt_mensaje.setTextSize(14);
+            params_1.width = 300;
+        }else if(ancho > 960 && ancho <= 1080){
+            txt_titulo.setPadding(5,0,5,5);
+            txt_titulo.setTextSize(18);
+            txt_mensaje.setTextSize(14);
+            params_1.width = 350;
+
+            params_7.width = 220;
+            params_8.width = 220;
+        }else if(ancho > 1080 && ancho <= 1200){
+            txt_titulo.setPadding(5,0,5,5);
+            txt_titulo.setTextSize(22);
+            txt_mensaje.setTextSize(16);
+            params_1.width = 400;
+
+            params_7.width = 240;
+            params_8.width = 240;
+        }else if(ancho > 1200 && ancho <= 1320){
+            txt_titulo.setPadding(5,0,5,5);
+            txt_titulo.setTextSize(22);
+            txt_mensaje.setTextSize(20);
+            params_1.width = 450;
+
+            params_7.width = 260;
+            params_8.width = 260;
+        }else if(ancho > 1320 && ancho <= 1440){
+            txt_titulo.setPadding(5,0,5,5);
+            txt_titulo.setTextSize(24);
+            txt_mensaje.setTextSize(20);
+            params_1.width = 500;
+
+            params_7.width = 275;
+            params_8.width = 275;
+        }else if(ancho > 1440){
+            txt_titulo.setPadding(5,0,5,5);
+            txt_titulo.setTextSize(24);
+            txt_mensaje.setTextSize(20);
+            params_1.width = 500;
+
+            params_7.width = 275;
+            params_8.width = 275;
         }
+
 
         if(alto<= 800){
-            params_vp.height = 400;
+            params_1.height = 100;
+            params_2.height = 400;
         }else if(alto > 800 && alto <= 1280){
-            txt_mensaje.setTextSize(15);
-            params_vp.height = 650;
-        }else if(alto > 1280 && alto <= 1440){
-            txt_mensaje.setTextSize(20);
-            params_vp.height = 800;
-        }else if(alto > 1400 && alto <= 1720){
-            txt_mensaje.setTextSize(21);
-            params_vp.height = 1000;
-        }else if(alto > 1720 && alto <= 2040){
-            txt_mensaje.setTextSize(22);
-            params_vp.height = 1200;
-        }else if(alto > 2040 && alto <= 2560){
-            params_vp.height = 1500;
+            params_1.height = 200;
+            params_2.height = 600;
+        }else if(alto > 1280 && alto <= 1800){
+            params_1.height = 220;
+            params_2.height = 900;
+        }else if(alto > 1800 && alto <= 1920){
+            params_1.height = 220;
+            params_2.height = 1000;
+        }else if(alto > 1920 && alto <= 2160){
+            params_1.height = 250;
+            params_2.height = 1150;
+
+            params_7.height = 220;
+            params_8.height = 220;
+        }else if(alto > 2160 && alto <= 2560) {
+            params_1.height = 300;
+            params_2.height = 1300;
+
+            params_7.height = 275;
+            params_8.height = 275;
+        }else if(alto > 2560) {
+            params_1.height = 300;
+            params_2.height = 1300;
+
+            params_7.height = 275;
+            params_8.height = 275;
         }
-
-        //contenido.setLayoutParams(params_cont);
-        representativa.setLayoutParams(params_rep);
-        vista_pagina.setLayoutParams(params_vp);
-
     }
 
     @Override

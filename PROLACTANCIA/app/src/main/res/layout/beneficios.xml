@@ -53,10 +53,11 @@
 
     <ImageView
         android:id="@+id/img_representativa"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
         android:layout_above="@id/contenido"
         android:layout_below="@id/divider"
+        android:scaleType="fitStart"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="10dp"
         app:srcCompat="@drawable/beneficios_1" />
@@ -71,9 +72,10 @@
         android:layout_alignParentRight="true"
         android:layout_marginRight="10dp"
         android:layout_toEndOf="@+id/img_representativa"
-        android:textAlignment="viewEnd"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
         android:textAllCaps="false"
-        android:textDirection="firstStrongLtr"
+        android:textDirection="anyRtl"
         android:textSize="14sp" />
 
     <com.google.android.material.tabs.TabLayout
