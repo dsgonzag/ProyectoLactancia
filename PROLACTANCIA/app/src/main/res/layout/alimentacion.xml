@@ -38,7 +38,7 @@
         android:layout_toRightOf="@id/bt_atras"
         android:padding="5dp"
         android:paddingTop="15dp"
-        android:textAlignment="center"
+        android:gravity="center"
         android:textSize="24sp" />
 
     <ImageButton

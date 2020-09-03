@@ -17,6 +17,7 @@ import android.widget.TextView;
 
 import com.packages.prolactancia.Maps;
 
+import com.packages.prolactancia.MapsActivity;
 import com.packages.prolactancia.R;
 
 /**
@@ -76,7 +77,7 @@ public class banco extends Fragment {
         ir_mapa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent mapa = new Intent(getActivity(), Maps.class);
+                Intent mapa = new Intent(getActivity(), MapsActivity.class);
                 startActivity(mapa);
             }
         });

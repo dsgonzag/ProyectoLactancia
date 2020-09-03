@@ -38,7 +38,7 @@
         android:layout_toRightOf="@id/bt_atras"
         android:padding="5dp"
         android:paddingTop="15dp"
-        android:textAlignment="center"
+        android:gravity="center"
         android:textSize="18sp" />
 
     <ImageButton
@@ -59,6 +59,7 @@
         android:layout_below="@id/divider"
         android:layout_alignParentRight="true"
         android:layout_marginRight="10dp"
+        android:scaleType="centerInside"
         app:srcCompat="@drawable/succion_pos_1" />
 
     <TextView

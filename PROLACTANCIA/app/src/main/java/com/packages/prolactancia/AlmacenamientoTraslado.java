@@ -117,23 +117,23 @@ public class AlmacenamientoTraslado extends AppCompatActivity implements  View.O
             params_1.width = 150;
         }else if(ancho > 600 && ancho <= 720){
             txt_titulo.setPadding(5,5,5,5);
-            txt_titulo.setTextSize(18);
+            txt_titulo.setTextSize(20);
             txt_mensaje.setTextSize(16);
             params_1.width = 200;
         }else if(ancho > 720 && ancho <= 840){
             txt_titulo.setPadding(5,5,5,5);
-            txt_titulo.setTextSize(18);
+            txt_titulo.setTextSize(22);
             txt_mensaje.setTextSize(16);
             params_1.width = 250;
         }else if(ancho > 840 && ancho <= 960){
             txt_titulo.setPadding(5,5,5,5);
             txt_titulo.setTextSize(18);
-            txt_mensaje.setTextSize(14);
+            txt_mensaje.setTextSize(18);
             params_1.width = 300;
         }else if(ancho > 960 && ancho <= 1080){
             txt_titulo.setPadding(5,5,5,5);
             txt_titulo.setTextSize(20);
-            txt_mensaje.setTextSize(14);
+            txt_mensaje.setTextSize(16);
             params_1.width = 350;
 
             params_7.width = 220;

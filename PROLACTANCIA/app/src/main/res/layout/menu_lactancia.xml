@@ -36,7 +36,7 @@
         android:layout_centerHorizontal="true"
         android:padding="5dp"
         android:paddingTop="15dp"
-        android:textAlignment="center"
+        android:gravity="center"
         android:textSize="30sp" />
 
     <ImageButton

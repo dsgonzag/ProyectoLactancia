@@ -38,7 +38,7 @@
         android:layout_toRightOf="@id/bt_atras"
         android:padding="5dp"
         android:paddingTop="15dp"
-        android:textAlignment="center"
+        android:gravity="center"
         android:textSize="22sp" />
 
     <ImageButton
@@ -57,7 +57,7 @@
         android:layout_height="100dp"
         android:layout_above="@id/contenido"
         android:layout_below="@id/divider"
-        android:scaleType="fitStart"
+        android:scaleType="centerInside"
         android:layout_alignParentRight="true"
         android:layout_marginRight="10dp"
         app:srcCompat="@drawable/almacenamiento_1" />
