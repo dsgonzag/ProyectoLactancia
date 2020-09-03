@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/formato_boton"
         android:foregroundTint="@android:color/transparent"
-    tools:context="app.packages.prolactancia.Controladores.abceso">
+    tools:context="com.packages.prolactancia.Controladores.abceso">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:background="@color/cardview_shadow_start_color"
         android:backgroundTint="@color/cardview_shadow_start_color"
         android:foreground="@color/cardview_shadow_start_color"
@@ -87,6 +87,25 @@ pecho con los 2 senos si no tiene dolor o molestias."
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textViewFuente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:padding="3dp"
+            android:text="Fuente: Ministerio de Salud Pública y Unicef"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView4"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

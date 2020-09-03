@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_nuevo"
-    tools:context=".FrecuenciaSuccion">
+    tools:context="com.packages.prolactancia.FrecuenciaSuccion">
 
     <View
         android:id="@+id/divider"
@@ -76,7 +76,7 @@
 
     <fragment
         android:id="@+id/contenido"
-        android:name="app.packages.prolactancia.Controladores.frecuencia_succion"
+        android:name="com.packages.prolactancia.Controladores.frecuencia_succion"
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:layout_alignParentBottom="true"

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_nuevo"
-    tools:context="app.packages.prolactancia.EstimulacionExtraccion">
+    tools:context="com.packages.prolactancia.EstimulacionExtraccion">
 
     <View
         android:id="@+id/divider"
@@ -106,7 +106,7 @@
             android:id="@+id/tab_pasos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Séis pasos" />
+            android:text="Seis pasos" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tab_extractor"

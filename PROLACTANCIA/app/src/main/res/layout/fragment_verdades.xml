@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/formato_boton_inf"
         android:foregroundTint="@android:color/transparent"
-        tools:context="app.packages.prolactancia.Controladores.verdades">
+        tools:context="com.packages.prolactancia.Controladores.verdades">
 
         <!-- TODO: Update blank fragment layout -->
 
@@ -149,6 +149,7 @@ Si se trata de otra enfermedad más grave, antes de tomar cualquier  medicació
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
+            android:layout_marginBottom="20dp"
             android:padding="3dp"
             android:text="Con una técnica adecuada y apoyo, tanto las madres como los bebés pueden
 retomar la lactancia. Esta práctica es vital durante una emergencia."
@@ -159,6 +160,24 @@ retomar la lactancia. Esta práctica es vital durante una emergencia."
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
+        <TextView
+            android:id="@+id/textViewFuente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:padding="3dp"
+            android:text="Fuente: Ministerio de Salud Pública y Unicef"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView8"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

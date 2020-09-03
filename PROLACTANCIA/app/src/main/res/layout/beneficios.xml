@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_nuevo"
-    tools:context="app.packages.prolactancia.Beneficios">
+    tools:context="com.packages.prolactancia.Beneficios">
 
     <View
         android:id="@+id/divider"

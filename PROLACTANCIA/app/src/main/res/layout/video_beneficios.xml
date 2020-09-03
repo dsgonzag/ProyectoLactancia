@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:screenOrientation="landscape"
-    tools:context=".VideoBeneficios">
+    tools:context="com.packages.prolactancia.VideoBeneficios">
 
     <FrameLayout
         android:layout_width="match_parent"

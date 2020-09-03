@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_nuevo"
-    tools:context="app.packages.prolactancia.Mastitis">
+    tools:context="com.packages.prolactancia.Mastitis">
 
     <View
         android:id="@+id/divider"
@@ -75,7 +75,7 @@
 
     <fragment
         android:id="@+id/contenido"
-        android:name="app.packages.prolactancia.Controladores.mastitis"
+        android:name="com.packages.prolactancia.Controladores.mastitis"
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:layout_alignParentBottom="true"

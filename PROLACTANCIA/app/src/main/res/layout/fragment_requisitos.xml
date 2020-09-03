@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/formato_boton_inf"
         android:foregroundTint="@android:color/transparent"
-        tools:context="app.packages.prolactancia.Controladores.requisitos">
+        tools:context="com.packages.prolactancia.Controladores.requisitos">
 
         <!-- TODO: Update blank fragment layout -->
 
@@ -176,6 +176,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
+            android:layout_marginBottom="20dp"
             android:padding="3dp"
             android:text="El profesional del área médica responsable del Banco de Leche decidirá si
 la donante cumple con los requisitos necesarios para la donación."
@@ -185,6 +186,25 @@ la donante cumple con los requisitos necesarios para la donación."
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/textViewFuente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:padding="3dp"
+            android:text="Fuente: Ministerio de Salud Pública y Unicef"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView10"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

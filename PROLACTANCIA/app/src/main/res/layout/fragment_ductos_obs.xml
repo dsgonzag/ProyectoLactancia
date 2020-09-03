@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/formato_boton"
         android:foregroundTint="@android:color/transparent"
-    tools:context="app.packages.prolactancia.Controladores.ductos_obs">
+    tools:context="com.packages.prolactancia.Controladores.ductos_obs">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:background="@color/cardview_shadow_start_color"
         android:backgroundTint="@color/cardview_shadow_start_color"
         android:foreground="@color/cardview_shadow_start_color"
@@ -42,8 +42,8 @@ duros alrededor de los cuales se siente presión y dolor."
 
     <ImageView
         android:id="@+id/img_ductos_info"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
         android:src="@drawable/ductos_obs_2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintBottom_toTopOf="@id/textView3"
@@ -86,6 +86,25 @@ tomando bien el pecho y puede darse un masaje suave presionando el área dura y 
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textViewFuente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:padding="3dp"
+            android:text="Fuente: Ministerio de Salud Pública y Unicef"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView4"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

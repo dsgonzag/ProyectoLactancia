@@ -8,7 +8,7 @@
     android:background="@drawable/fondo_nuevo"
     android:orientation="vertical"
     android:useDefaultMargins="true"
-    tools:context="app.packages.prolactancia.MenuPrincipal">
+    tools:context="com.packages.prolactancia.MenuPrincipal">
 
 
     <ImageButton

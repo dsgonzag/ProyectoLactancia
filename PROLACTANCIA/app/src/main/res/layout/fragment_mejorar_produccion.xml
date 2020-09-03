@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/formato_boton_inf"
         android:foregroundTint="@android:color/transparent"
-        tools:context="app.packages.prolactancia.Controladores.mejorar_produccion">
+        tools:context="com.packages.prolactancia.Controladores.mejorar_produccion">
 
         <!-- TODO: Update blank fragment layout -->
 
@@ -92,14 +92,33 @@ o después del almuerzo. No la tome con leche o infusiones."
 
         <ImageView
             android:id="@+id/img_mejorar_1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="120dp"
+            android:layout_marginBottom="20dp"
             android:src="@drawable/alimentacion_2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
+        <TextView
+            android:id="@+id/textViewFuente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:padding="3dp"
+            android:text="Fuente: Ministerio de Salud Pública y Unicef"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_mejorar_1"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

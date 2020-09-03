@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_nuevo"
-    tools:context="app.packages.prolactancia.MadreEnferma">
+    tools:context="com.packages.prolactancia.MadreEnferma">
 
     <View
         android:id="@+id/divider"
@@ -75,7 +75,7 @@
 
     <fragment
         android:id="@+id/contenido"
-        android:name="app.packages.prolactancia.Controladores.madre_enf"
+        android:name="com.packages.prolactancia.Controladores.madre_enf"
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:layout_alignParentBottom="true"

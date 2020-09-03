@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/formato_boton_inf"
         android:foregroundTint="@android:color/transparent"
-        tools:context="app.packages.prolactancia.Controladores.extraccion_manual">
+        tools:context="com.packages.prolactancia.Controladores.extraccion_manual">
 
         <!-- TODO: Update blank fragment layout -->
 
@@ -144,6 +144,7 @@ otra persona pueda alimentar a su hija o hijo cuando usted tenga que ausentarse.
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
+            android:layout_marginBottom="20dp"
             android:padding="3dp"
             android:text="Sexto. Recolectar la leche en un frasco de vidrio con tapa rosca de plástico.
 Previo esterilizado, también puede usar bolsas recolectoras."
@@ -154,6 +155,24 @@ Previo esterilizado, también puede usar bolsas recolectoras."
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
+        <TextView
+            android:id="@+id/textViewFuente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:padding="3dp"
+            android:text="Fuente: Ministerio de Salud Pública y Unicef"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView8"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

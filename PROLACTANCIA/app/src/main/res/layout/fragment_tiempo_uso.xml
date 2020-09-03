@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/formato_boton_inf"
         android:foregroundTint="@android:color/transparent"
-        tools:context="app.packages.prolactancia.Controladores.tiempo_uso">
+        tools:context="com.packages.prolactancia.Controladores.tiempo_uso">
 
         <!-- TODO: Update blank fragment layout -->
 
@@ -147,6 +147,7 @@ en un recipiente que tenga agua caliente."
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
+            android:layout_marginBottom="20dp"
             android:padding="3dp"
             android:text="Después de haber calentado la leche materna y posteriormente alimentado
 al bebé con jeringuilla o vasito para no interferir en el aprendizaje posterior de la lactancia,
@@ -157,6 +158,25 @@ se puede mantener la leche en una duración de dos horas, pasado ese tiempo se d
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/textViewFuente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:padding="3dp"
+            android:text="Fuente: Ministerio de Salud Pública y Unicef"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView8"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
