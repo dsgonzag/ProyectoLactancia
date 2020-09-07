@@ -27,11 +27,11 @@ public class Mastitis extends AppCompatActivity implements  View.OnClickListener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mastitis);
 
-        txt_titulo = findViewById(R.id.txt_titulo);
+        /*txt_titulo = findViewById(R.id.txt_titulo);
         String fuente1 = "fuentes/Comfortaa-Bold.ttf";
         Typeface tipo_fuente1 = Typeface.createFromAsset(getAssets(),fuente1);
         txt_titulo.setTypeface(tipo_fuente1);
-        txt_titulo.setText("Mastitis");
+        txt_titulo.setText("Mastitis");*/
 
         String fuente2 = "fuentes/futura.ttf";
         Typeface tipo_fuente2 = Typeface.createFromAsset(getAssets(),fuente2);
@@ -68,65 +68,65 @@ public class Mastitis extends AppCompatActivity implements  View.OnClickListener
         RelativeLayout.LayoutParams params_8= (RelativeLayout.LayoutParams) bt_home.getLayoutParams();
 
         if(ancho<= 480){
-            txt_titulo.setPadding(5,20,5,5);
-            txt_titulo.setTextSize(26);
+            //txt_titulo.setPadding(5,20,5,5);
+            //txt_titulo.setTextSize(26);
             txt_mensaje.setTextSize(15);
             params_1.width = 100;
         }else if(ancho > 480 && ancho <= 600){
-            txt_titulo.setPadding(5,20,5,5);
-            txt_titulo.setTextSize(28);
+            //txt_titulo.setPadding(5,20,5,5);
+            //txt_titulo.setTextSize(28);
             txt_mensaje.setTextSize(15);
             params_1.width = 150;
         }else if(ancho > 600 && ancho <= 720){
-            txt_titulo.setPadding(5,25,5,5);
-            txt_titulo.setTextSize(30);
+            //txt_titulo.setPadding(5,25,5,5);
+            //txt_titulo.setTextSize(30);
             txt_mensaje.setTextSize(17);
             params_1.width = 200;
         }else if(ancho > 720 && ancho <= 840){
-            txt_titulo.setPadding(5,25,5,5);
-            txt_titulo.setTextSize(32);
+            //txt_titulo.setPadding(5,25,5,5);
+            //txt_titulo.setTextSize(32);
             txt_mensaje.setTextSize(22);
             params_1.width = 200;
         }else if(ancho > 840 && ancho <= 960){
-            txt_titulo.setPadding(5,25,5,5);
-            txt_titulo.setTextSize(32);
+            //txt_titulo.setPadding(5,25,5,5);
+            //txt_titulo.setTextSize(32);
             txt_mensaje.setTextSize(16);
             params_1.width = 300;
         }else if(ancho > 960 && ancho <= 1080){
-            txt_titulo.setPadding(5,25,5,5);
-            txt_titulo.setTextSize(32);
+            //txt_titulo.setPadding(5,25,5,5);
+            //txt_titulo.setTextSize(32);
             txt_mensaje.setTextSize(16);
             params_1.width = 350;
 
             params_7.width = 220;
             params_8.width = 220;
         }else if(ancho > 1080 && ancho <= 1200){
-            txt_titulo.setPadding(5,25,5,5);
-            txt_titulo.setTextSize(38);
+            //txt_titulo.setPadding(5,25,5,5);
+            //txt_titulo.setTextSize(38);
             txt_mensaje.setTextSize(21);
             params_1.width = 400;
 
             params_7.width = 240;
             params_8.width = 240;
         }else if(ancho > 1200 && ancho <= 1320){
-            txt_titulo.setPadding(5,25,5,5);
-            txt_titulo.setTextSize(40);
+            //txt_titulo.setPadding(5,25,5,5);
+            //txt_titulo.setTextSize(40);
             txt_mensaje.setTextSize(20);
             params_1.width = 450;
 
             params_7.width = 260;
             params_8.width = 260;
         }else if(ancho > 1320 && ancho <= 1440){
-            txt_titulo.setPadding(5,25,5,5);
-            txt_titulo.setTextSize(42);
+            //txt_titulo.setPadding(5,25,5,5);
+            //txt_titulo.setTextSize(42);
             txt_mensaje.setTextSize(20);
             params_1.width = 500;
 
             params_7.width = 275;
             params_8.width = 275;
         }else if(ancho > 1440){
-            txt_titulo.setPadding(5,25,5,5);
-            txt_titulo.setTextSize(42);
+            //txt_titulo.setPadding(5,25,5,5);
+            //txt_titulo.setTextSize(42);
             txt_mensaje.setTextSize(20);
             params_1.width = 500;
 

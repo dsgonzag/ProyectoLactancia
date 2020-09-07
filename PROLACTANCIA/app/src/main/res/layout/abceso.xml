@@ -28,7 +28,7 @@
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/atras_m" />
 
-    <TextView
+    <!--TextView
         android:id="@+id/txt_titulo"
         android:layout_width="wrap_content"
         android:layout_height="75dp"
@@ -39,7 +39,16 @@
         android:padding="5dp"
         android:paddingTop="15dp"
         android:gravity="center"
-        android:textSize="22sp" />
+        android:textSize="22sp" /-->
+    <ImageView
+        android:id="@+id/img_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_toStartOf="@id/bt_home"
+        android:layout_toEndOf="@id/bt_atras"
+        app:srcCompat="@drawable/absceso_0" />
 
     <ImageButton
         android:id="@+id/bt_home"

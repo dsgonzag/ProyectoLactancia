@@ -10,6 +10,7 @@ import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.packages.prolactancia.R;
 
@@ -76,13 +77,50 @@ public class MenuPrincipal extends AppCompatActivity implements  View.OnClickLis
         }
     }
 
-    public void redimensionar(){//j7 720*1280
+    public void redimensionar(){
         DisplayMetrics dm = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(dm);
         int ancho = dm.widthPixels;
         int alto = dm.heightPixels;
 
         //Toast.makeText (getApplicationContext (), "ancho: " +ancho + " alto: "+alto , Toast.LENGTH_SHORT) .show ();
+         int enc = 100;
+         int marg_lat = 40;
+
+
+        int ancho_disp = ancho - marg_lat;
+        int ancho_2 = ancho_disp /2;
+
+        int alto_disp = alto - enc;
+        int esp = (int) Math.round(alto_disp * 0.1);
+        //int margin_b = esp / 6;
+        int margin_b = 0;
+        alto_disp = alto_disp - esp;
+        int alto_3 = alto_disp / 3;
+
+        //Toast.makeText (getApplicationContext (), "espacio: " +esp + " margin: "+margin_b , Toast.LENGTH_SHORT) .show ();
+
+        int ancho_bt = ancho_2 - 30;
+        int alto_bt = alto_3;
+        int dif = alto_bt - ancho_bt;
+        int ax = 0;
+        int ay = 0;
+
+        //Toast.makeText (getApplicationContext (), "La diferencia es : "+dif , Toast.LENGTH_SHORT) .show ();
+
+        if (dif < 50){
+            ax = 50 - dif;
+        }else if (dif > 50){
+            ay = dif - 50;
+        }
+
+        ancho_bt = ancho_bt - ax;
+        alto_bt = alto_bt - ay;
+
+
+        //Toast.makeText (getApplicationContext (), "El ancho de botones será: "+ancho_bt , Toast.LENGTH_SHORT) .show ();
+        //Toast.makeText (getApplicationContext (), "El alto de botones será: "+alto_bt , Toast.LENGTH_SHORT) .show ();
+
 
         ConstraintLayout.LayoutParams params_1 = (ConstraintLayout.LayoutParams) bt_beneficios.getLayoutParams();
         ConstraintLayout.LayoutParams params_2 = (ConstraintLayout.LayoutParams) bt_lactancia.getLayoutParams();
@@ -91,8 +129,30 @@ public class MenuPrincipal extends AppCompatActivity implements  View.OnClickLis
         ConstraintLayout.LayoutParams params_5 = (ConstraintLayout.LayoutParams) bt_higiene.getLayoutParams();
         ConstraintLayout.LayoutParams params_6 = (ConstraintLayout.LayoutParams) bt_mitos.getLayoutParams();
 
-        if(ancho<= 480){
-            //Toast.makeText (getApplicationContext (), "en el if" , Toast.LENGTH_SHORT) .show ();
+        params_1.width = ancho_bt;
+        params_1.height = alto_bt;
+        params_1.bottomMargin = margin_b;
+
+        params_2.width = ancho_bt;
+        params_2.height = alto_bt;
+        params_2.bottomMargin = margin_b;
+
+        params_3.width = ancho_bt;
+        params_3.height = alto_bt;
+        params_3.bottomMargin = margin_b;
+
+        params_4.width = ancho_bt;
+        params_4.height = alto_bt;
+        params_4.bottomMargin = margin_b;
+
+        params_5.width = ancho_bt;
+        params_5.height = alto_bt;
+        params_5.bottomMargin = margin_b;
+
+        params_6.width = ancho_bt;
+        params_6.height = alto_bt;
+        params_6.bottomMargin = margin_b;
+        /*if(ancho<= 480){
             params_1.width = 200;
             params_2.width = 200;
             params_3.width = 200;
@@ -162,9 +222,9 @@ public class MenuPrincipal extends AppCompatActivity implements  View.OnClickLis
             params_4.width = 600;
             params_5.width = 600;
             params_6.width = 600;
-        }
+        }*/
 
-
+/*
         if(alto<= 800){
             params_1.height = 200;
             params_1.bottomMargin = 10;
@@ -269,7 +329,7 @@ public class MenuPrincipal extends AppCompatActivity implements  View.OnClickLis
         bt_higiene.setLayoutParams(params_5);
         bt_higiene.setScaleType(ImageView.ScaleType.CENTER_CROP);
         bt_mitos.setLayoutParams(params_6);
-        bt_mitos.setScaleType(ImageView.ScaleType.CENTER_CROP);
+        bt_mitos.setScaleType(ImageView.ScaleType.CENTER_CROP);*/
     }
 
     @Override

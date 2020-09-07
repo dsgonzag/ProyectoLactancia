@@ -28,7 +28,7 @@
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/atras_m" />
 
-    <TextView
+    <!--TextView
         android:id="@+id/txt_titulo"
         android:layout_width="wrap_content"
         android:layout_height="75dp"
@@ -39,7 +39,16 @@
         android:padding="5dp"
         android:paddingTop="15dp"
         android:gravity="center"
-        android:textSize="24sp" />
+        android:textSize="24sp" /-->
+    <ImageView
+        android:id="@+id/img_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_toStartOf="@id/bt_home"
+        android:layout_toEndOf="@id/bt_atras"
+        app:srcCompat="@drawable/beneficios_0" />
 
     <ImageButton
         android:id="@+id/bt_home"
@@ -57,7 +66,7 @@
         android:layout_height="100dp"
         android:layout_above="@id/contenido"
         android:layout_below="@id/divider"
-        android:scaleType="center"
+        android:scaleType="centerInside"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="10dp"
         app:srcCompat="@drawable/beneficios_1" />
@@ -90,10 +99,10 @@
         android:textAlignment="center"
         android:textDirection="inherit"
         app:tabBackground="@android:color/transparent"
+        app:tabGravity="center"
         app:tabIndicatorColor="#E91E63"
         app:tabIndicatorGravity="bottom"
-        app:tabMaxWidth="400dp"
-        app:tabMode="fixed"
+        app:tabMode="auto"
         app:tabRippleColor="@android:color/holo_red_light"
         app:tabSelectedTextColor="#E91E63"
         app:tabTextAppearance="@style/TextAppearance.AppCompat.Medium"

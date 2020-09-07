@@ -132,7 +132,7 @@ public class cuando extends Fragment {
             t4.setTextSize(15);
             t5.setTextSize(15);
             t6.setTextSize(15);
-            params_b1.height = 75;
+            params_b1.height = 100;
         }else if(alto > 1080 && alto <= 1280){
             t1.setTextSize(16);
             t2.setTextSize(16);
@@ -140,7 +140,7 @@ public class cuando extends Fragment {
             t4.setTextSize(16);
             t5.setTextSize(16);
             t6.setTextSize(16);
-            params_b1.height = 75;
+            params_b1.height = 125;
         }else if(alto > 1280 && alto <= 1440){
             t1.setTextSize(16);
             t2.setTextSize(16);
@@ -148,7 +148,7 @@ public class cuando extends Fragment {
             t4.setTextSize(16);
             t5.setTextSize(16);
             t6.setTextSize(16);
-            params_b1.height = 80;
+            params_b1.height = 150;
         }else if(alto > 1440 && alto <= 1720){
             t1.setTextSize(17);
             t2.setTextSize(17);
@@ -156,7 +156,7 @@ public class cuando extends Fragment {
             t4.setTextSize(17);
             t5.setTextSize(17);
             t6.setTextSize(17);
-            params_b1.height = 85;
+            params_b1.height = 175;
         }else if(alto > 1720 && alto <= 2040){
             t1.setTextSize(17);
             t2.setTextSize(17);
@@ -164,7 +164,7 @@ public class cuando extends Fragment {
             t4.setTextSize(17);
             t5.setTextSize(17);
             t6.setTextSize(17);
-            params_b1.height = 90;
+            params_b1.height = 200;
         }else if(alto > 2040 && alto <= 2260){
             t1.setTextSize(18);
             t2.setTextSize(18);
@@ -172,7 +172,7 @@ public class cuando extends Fragment {
             t4.setTextSize(18);
             t5.setTextSize(18);
             t6.setTextSize(18);
-            params_b1.height = 95;
+            params_b1.height = 225;
         }else if(alto > 2260 && alto <= 2560){
             t1.setTextSize(19);
             t2.setTextSize(19);
@@ -180,7 +180,7 @@ public class cuando extends Fragment {
             t4.setTextSize(19);
             t5.setTextSize(19);
             t6.setTextSize(19);
-            params_b1.height = 100;
+            params_b1.height = 250;
         }else if(alto > 2560){
             t1.setTextSize(20);
             t2.setTextSize(20);
@@ -188,7 +188,7 @@ public class cuando extends Fragment {
             t4.setTextSize(20);
             t5.setTextSize(20);
             t6.setTextSize(20);
-            params_b1.height = 100;
+            params_b1.height = 275;
         }
     }
 }

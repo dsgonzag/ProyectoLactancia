@@ -24,11 +24,11 @@ public class MenuFrecuenciaLactar extends AppCompatActivity implements View.OnCl
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_frecuencia_lactar);
 
-        txt_titulo = findViewById(R.id.txt_titulo);
+        /*txt_titulo = findViewById(R.id.txt_titulo);
         String fuente1 = "fuentes/Comfortaa-Bold.ttf";
         Typeface tipo_fuente1 = Typeface.createFromAsset(getAssets(),fuente1);
         txt_titulo.setTypeface(tipo_fuente1);
-        txt_titulo.setText("Frecuencia de lactar");
+        txt_titulo.setText("Frecuencia de lactar");*/
 
         bt_atras = findViewById(R.id.bt_atras);
         bt_atras.setOnClickListener(this);
@@ -96,6 +96,43 @@ public class MenuFrecuenciaLactar extends AppCompatActivity implements View.OnCl
         int alto = dm.heightPixels;
 
         //Toast.makeText (getApplicationContext (), "ancho: " +ancho + " alto: "+alto , Toast.LENGTH_SHORT) .show ();
+        int enc = 100;
+        int marg_lat = 40;
+
+
+        int ancho_disp = ancho - marg_lat;
+        int ancho_2 = ancho_disp /2;
+
+        int alto_disp = alto - enc;
+        int esp = (int) Math.round(alto_disp * 0.1);
+        //int margin_b = esp / 6;
+        int margin_b = 0;
+        alto_disp = alto_disp - esp;
+        int alto_3 = alto_disp / 3;
+
+        //Toast.makeText (getApplicationContext (), "espacio: " +esp + " margin: "+margin_b , Toast.LENGTH_SHORT) .show ();
+
+        int ancho_bt = ancho_2 - 30;
+        int alto_bt = alto_3;
+        int dif = alto_bt - ancho_bt;
+        int ax = 0;
+        int ay = 0;
+
+        //Toast.makeText (getApplicationContext (), "La diferencia es : "+dif , Toast.LENGTH_SHORT) .show ();
+
+        if (dif < 50){
+            ax = 50 - dif;
+        }else if (dif > 50){
+            ay = dif - 50;
+        }
+
+        ancho_bt = ancho_bt - ax;
+        alto_bt = alto_bt - ay;
+
+
+        //Toast.makeText (getApplicationContext (), "El ancho de botones será: "+ancho_bt , Toast.LENGTH_SHORT) .show ();
+        //Toast.makeText (getApplicationContext (), "El alto de botones será: "+alto_bt , Toast.LENGTH_SHORT) .show ();
+
 
         RelativeLayout.LayoutParams params_1 = (RelativeLayout.LayoutParams) bt_frecuencia.getLayoutParams();
         RelativeLayout.LayoutParams params_2= (RelativeLayout.LayoutParams) bt_pecho.getLayoutParams();
@@ -104,209 +141,29 @@ public class MenuFrecuenciaLactar extends AppCompatActivity implements View.OnCl
         RelativeLayout.LayoutParams params_5 = (RelativeLayout.LayoutParams) bt_protege.getLayoutParams();
         //RelativeLayout.LayoutParams params_6= (RelativeLayout.LayoutParams) bt_madre_enf.getLayoutParams();
 
-        RelativeLayout.LayoutParams params_7 = (RelativeLayout.LayoutParams) bt_atras.getLayoutParams();
-        RelativeLayout.LayoutParams params_8= (RelativeLayout.LayoutParams) bt_home.getLayoutParams();
+        params_1.width = ancho_bt;
+        params_1.height = alto_bt;
+        params_1.bottomMargin = margin_b;
 
-        if(ancho<= 480){
-            txt_titulo.setPadding(5,15,5,5);
-            txt_titulo.setTextSize(20);
-            params_1.width = 200;
-            params_2.width = 200;
-            params_3.width = 200;
-            params_4.width = 200;
-            params_5.width = 200;
-            //params_6.width = 200;
-            //params_7.width = 200;
-            //params_8.width = 200;
-        }else if(ancho > 480 && ancho <= 600){
-            txt_titulo.setPadding(5,15,5,5);
-            txt_titulo.setTextSize(20);
-            params_1.width = 250;
-            params_2.width = 250;
-            params_3.width = 250;
-            params_4.width = 250;
-            params_5.width = 250;
-            //params_6.width = 250;
-            //params_7.width = 125;
-            //params_8.width = 125;
-        }else if(ancho > 600 && ancho <= 720){
-            txt_titulo.setPadding(5,15,5,5);
-            txt_titulo.setTextSize(24);
-            params_1.width = 300;
-            params_2.width = 300;
-            params_3.width = 300;
-            params_4.width = 300;
-            params_5.width = 300;
-            //params_6.width = 300;
-            //params_7.width = 150;
-            //params_8.width = 150;
-        }else if(ancho > 720 && ancho <= 840){
-            txt_titulo.setPadding(5,10,5,5);
-            txt_titulo.setTextSize(24);
-            params_1.width = 300;
-            params_2.width = 300;
-            params_3.width = 300;
-            params_4.width = 300;
-            params_5.width = 300;
-            //params_6.width = 350;
-            //params_7.width = 175;
-            //params_8.width = 175;
-        }else if(ancho > 840 && ancho <= 960){
-            txt_titulo.setPadding(5,10,5,5);
-            txt_titulo.setTextSize(26);
-            params_1.width = 400;
-            params_2.width = 400;
-            params_3.width = 400;
-            params_4.width = 400;
-            params_5.width = 400;
-            //params_6.width = 400;
-            //params_7.width = 200;
-            //params_8.width = 200;
-        }else if(ancho > 960 && ancho <= 1080){
-            txt_titulo.setPadding(5,5,5,5);
-            txt_titulo.setTextSize(26);
-            params_1.width = 450;
-            params_2.width = 450;
-            params_3.width = 450;
-            params_4.width = 450;
-            params_5.width = 450;
-            //params_6.width = 450;
-            params_7.width = 220;
-            params_8.width = 220;
-        }else if(ancho > 1080 && ancho <= 1200){
-            txt_titulo.setPadding(5,10,5,5);
-            txt_titulo.setTextSize(28);
-            params_1.width = 500;
-            params_2.width = 500;
-            params_3.width = 500;
-            params_4.width = 500;
-            params_5.width = 500;
-            //params_6.width = 500;
-            params_7.width = 240;
-            params_8.width = 240;
-        }else if(ancho > 1200 && ancho <= 1320){
-            txt_titulo.setPadding(5,10,5,5);
-            txt_titulo.setTextSize(28);
-            params_1.width = 550;
-            params_2.width = 550;
-            params_3.width = 550;
-            params_4.width = 550;
-            params_5.width = 550;
-            //params_6.width = 550;
-            params_7.width = 260;
-            params_8.width = 260;
-        }else if(ancho > 1320 && ancho <= 1440){
-            txt_titulo.setPadding(5,5,5,5);
-            txt_titulo.setTextSize(30);
-            params_1.width = 600;
-            params_2.width = 600;
-            params_3.width = 600;
-            params_4.width = 600;
-            params_5.width = 600;
-            //params_6.width = 600;
-            params_7.width = 275;
-            params_8.width = 275;
-        }
+        params_2.width = ancho_bt;
+        params_2.height = alto_bt;
+        params_2.bottomMargin = margin_b;
 
+        params_3.width = ancho_bt;
+        params_3.height = alto_bt;
+        params_3.bottomMargin = margin_b;
 
-        if(alto<= 800){
-            params_1.height = 200;
-            params_1.bottomMargin = 10;
-            params_2.height = 200;
-            params_2.bottomMargin = 10;
-            params_3.height = 200;
-            params_3.bottomMargin = 10;
-            params_4.height = 200;
-            params_4.bottomMargin = 10;
-            params_5.height = 200;
-            params_5.bottomMargin = 10;
-            //params_6.height = 200;
-            //params_6.bottomMargin = 10;
-            //params_7.height = 200;
-            //params_8.height = 200;
-        }else if(alto > 800 && alto <= 1080){
-            params_1.height = 300;
-            params_1.bottomMargin = 20;
-            params_2.height = 300;
-            params_2.bottomMargin = 20;
-            params_3.height = 300;
-            params_3.bottomMargin = 20;
-            params_4.height = 300;
-            params_4.bottomMargin = 20;
-            params_5.height = 300;
-            params_5.bottomMargin = 20;
-            //params_6.height = 300;
-            //params_6.bottomMargin = 20;
-            //params_7.height = 300;
-            //params_8.height = 300;
-        }else if(alto > 1080 && alto <= 1280){
-            params_1.height = 320;
-            params_1.bottomMargin = 5;
-            params_2.height = 320;
-            params_2.bottomMargin = 5;
-            params_3.height = 320;
-            params_3.bottomMargin = 5;
-            params_4.height = 320;
-            params_4.bottomMargin = 5;
-            params_5.height = 320;
-            params_5.bottomMargin = 5;
-            if(alto > 1200 && alto <= 1280){
-                params_1.bottomMargin = 15;
-                params_2.bottomMargin = 15;
-                params_3.bottomMargin = 15;
-                params_4.bottomMargin = 15;
-                params_5.bottomMargin = 15;
-            }
-            //params_6.height = 300;
-            //params_6.bottomMargin = 20;
-            //params_7.height = 300;
-            //params_8.height = 300;
-        }else if(alto > 1280 && alto <= 1920){
-            params_1.height = 400;
-            params_1.bottomMargin = 30;
-            params_2.height = 400;
-            params_2.bottomMargin = 30;
-            params_3.height = 400;
-            params_3.bottomMargin = 30;
-            params_4.height = 400;
-            params_4.bottomMargin = 30;
-            params_5.height = 400;
-            params_5.bottomMargin = 30;
-            //params_6.height = 400;
-            ///params_6.bottomMargin = 30;
-            //params_7.height = 400;
-            //params_8.height = 400;
-        }else if(alto > 1920 && alto <= 2260){
-            params_1.height = 550;
-            params_1.bottomMargin = 20;
-            params_2.height = 550;
-            params_2.bottomMargin = 20;
-            params_3.height = 550;
-            params_3.bottomMargin = 20;
-            params_4.height = 550;
-            params_4.bottomMargin = 20;
-            params_5.height = 550;
-            params_5.bottomMargin = 40;
-            //params_6.height = 550;
-            //params_6.bottomMargin = 40;
-            params_7.height = 220;
-            params_8.height = 220;
-        }else if(alto > 2260 && alto <= 2560) {
-            params_1.height = 600;
-            params_1.bottomMargin = 50;
-            params_2.height = 600;
-            params_2.bottomMargin = 50;
-            params_3.height = 600;
-            params_3.bottomMargin = 50;
-            params_4.height = 600;
-            params_4.bottomMargin = 50;
-            params_5.height = 600;
-            params_5.bottomMargin = 50;
-            //params_6.height = 600;
-            //params_6.bottomMargin = 50;
-            params_7.height = 275;
-            params_8.height = 275;
-        }
+        params_4.width = ancho_bt;
+        params_4.height = alto_bt;
+        params_4.bottomMargin = margin_b;
+
+        params_5.width = ancho_bt;
+        params_5.height = alto_bt;
+        params_5.bottomMargin = margin_b;
+
+        /*params_6.width = ancho_bt;
+        params_6.height = alto_bt;
+        params_6.bottomMargin = margin_b;*/
     }
 
     @Override

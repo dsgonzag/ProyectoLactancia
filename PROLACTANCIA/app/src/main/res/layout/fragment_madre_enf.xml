@@ -57,7 +57,7 @@ Tratamiento de la epilepsia y Paludismo"
 
     <ImageView
         android:id="@+id/img_madre_enf_info"
-        android:layout_width="100dp"
+        android:layout_width="match_parent"
         android:layout_height="100dp"
         android:src="@drawable/madre_enf_2"
         app:layout_constraintBottom_toBottomOf="parent"

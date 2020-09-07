@@ -103,28 +103,28 @@ public class seis_pasos extends Fragment {
             params_i1.height = 400;
         }else if(alto > 800 && alto <= 1080){
             t1.setTextSize(15);
-            params_i1.height = 450;
+            params_i1.height = 500;
         }else if(alto > 1080 && alto <= 1280){
             t1.setTextSize(16);
-            params_i1.height = 500;
+            params_i1.height = 600;
         }else if(alto > 1280 && alto <= 1440){
             t1.setTextSize(16);
-            params_i1.height = 550;
+            params_i1.height = 700;
         }else if(alto > 1440 && alto <= 1720){
             t1.setTextSize(17);
-            params_i1.height = 600;
+            params_i1.height = 800;
         }else if(alto > 1720 && alto <= 2040){
             t1.setTextSize(17);
-            params_i1.height = 700;
+            params_i1.height = 900;
         }else if(alto > 2040 && alto <= 2260){
             t1.setTextSize(18);
-            params_i1.height = 800;
+            params_i1.height = 1000;
         }else if(alto > 2260 && alto <= 2560){
             t1.setTextSize(19);
-            params_i1.height = 850;
+            params_i1.height = 1000;
         }else if(alto > 2560){
             t1.setTextSize(20);
-            params_i1.height = 900;
+            params_i1.height = 1000;
         }
         i1.setLayoutParams(params_i1);
     }

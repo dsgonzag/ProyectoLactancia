@@ -85,7 +85,10 @@ public class informate_dg extends Fragment {
 
         String fuente1 = "fuentes/futura medium bt.ttf";
         Typeface tipo_fuente1 = Typeface.createFromAsset(this.getActivity().getAssets(),fuente1);
-        t1.setTypeface(tipo_fuente1);
+        String fuente2 = "fuentes/futura.ttf";
+        Typeface tipo_fuente2 = Typeface.createFromAsset(this.getActivity().getAssets(),fuente2);
+
+        t1.setTypeface(tipo_fuente2);
         t2.setTypeface(tipo_fuente1);
         t3.setTypeface(tipo_fuente1);
         t4.setTypeface(tipo_fuente1);
