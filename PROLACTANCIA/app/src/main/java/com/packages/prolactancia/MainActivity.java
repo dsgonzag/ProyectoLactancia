@@ -30,13 +30,10 @@ public class MainActivity extends AppCompatActivity {
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        loDatabase= new clsDatabase(this);
+        //loDatabase= new clsDatabase(this);
         pb = (ProgressBar)findViewById(R.id.progressBar);
         t = (TextView)findViewById(R.id.textViewPorcentaje);
-
         LlenarLugares();
-
         if(!pb_activa) {
             Thread th = new Thread(new Runnable() {
                 @Override
@@ -63,11 +60,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
             });
-
             th.start();
         }
-
-
     }
 
     private void LlenarLugares()
